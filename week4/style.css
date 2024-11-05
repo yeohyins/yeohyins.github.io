@@ -1,0 +1,30 @@
+button.SUBSCRIBE {
+    background-color: red;
+    color: white;
+    border: 1px solid black;
+}
+
+button.JOIN {
+    background-color: white;
+    color: black;
+}
+
+button-style {
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+#bigbutton {
+    font-size: 20px;
+}
+
+#webpublishing {
+    color: blueviolet;
+}
+
+#setbg {
+    background-image: url("images/instagram.jpeg");
+    background-size: contain;
+}

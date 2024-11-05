@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Nevigation Bar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #nav {
+            display: flex;
+            color: black;
+            justify-content: space-between;
+            padding: 20px;
+            width: 500px;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(226, 0, 226);
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: rgb(226, 0, 226);
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            background-color: white;
+        }
+
+        button.callnow {
+            background-color: rgb(203, 40, 203);
+            color: white;
+            border: 1px solid rgb(203, 40, 203);
+            border-radius: 50px;
+            padding: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <div><img src="images/logo.png" alt="logo" height="60px"></div>
+
+        <div id="nav">
+
+            <div><a href="#">Home</a></div>
+            <div>Services</div>
+            <div>About</div>
+            <div>Testimonials</div>
+            <div>Clients</div>
+            <div>Contact</div>
+        </div>
+
+        <div><button class="callnow">Call Now</button></div>
+    </header>
+
+</body>
+
+</html>
