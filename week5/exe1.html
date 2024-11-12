@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Nevigation Bar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .nav {
+            display: flex;
+            background-color: rgb(255, 251, 201);
+        }
+
+        .left {
+            display: flex;
+            gap: 10px;
+            padding: 10px;
+            margin: auto;
+        }
+
+        .right {
+            display: flex;
+            flex: 4;
+            justify-content: flex-end;
+            gap: 20px;
+            padding: 10px;
+        }
+
+        .profile {
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        .order {
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        button.orderonline {
+            background-color: black;
+            color: white;
+            border: 1px solid black;
+            padding: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="nav">
+
+        <div class="left">
+            <div class="logo">
+                <img src="images/logo.png" alt="logo" height="60px">
+            </div>
+
+            <div>
+                <h5>Shop</h5>
+            </div>
+            <div>
+                <h5>About</h5>
+            </div>
+            <div>
+                <h5>Location&Hours</h5>
+            </div>
+
+        </div>
+
+        <div class="right">
+            <div class="profile">
+                <img src="images/user.png" alt="logo" height="25px">
+            </div>
+            <div>
+                <h5>Log In</h5>
+            </div>
+
+            <div>
+                <h5>Cart(0)</h5>
+            </div>
+            <div class="order">
+                <button class="orderonline">Order Online</button>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

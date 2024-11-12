@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Nevigation Bar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .all {
+            display: flex;
+            background-image: url(images/sky.jpg);
+            background-size: auto;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .left {
+            display: flex;
+            flex: 6;
+            margin-top: 5px;
+            padding-left: 10px;
+        }
+
+        .nav {
+            padding-right: 10px;
+        }
+
+        .word {
+            display: flex;
+            gap: 15px;
+            margin: auto;
+            margin-top: auto;
+            margin-bottom: auto;
+            color: black;
+            justify-content: flex-end;
+        }
+
+        .subscribe {
+            display: flex;
+            flex: 1;
+            color: white;
+            background-color: black;
+            border-radius: 5px;
+            margin: auto;
+            margin-top: 15px;
+            padding: 5px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .subscribe:hover {
+            display: flex;
+            flex: 1;
+            color: black;
+            background-color: white;
+            border-color: black;
+            border-radius: 5px;
+            margin: auto;
+            margin-top: 15px;
+            padding: 5px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="all">
+        <div class="left">
+            <div class="logo">
+                <img src="images/space x.png" alt="logo" height="30px">
+            </div>
+        </div>
+
+        <div class="nav">
+            <div class="word">
+                <div>
+                    <h5>Technology</h5>
+                </div>
+                <div>
+                    <h5>About</h5>
+                </div>
+                <div>
+                    <h5>Careers</h5>
+                </div>
+                <div><button class="subscribe">Subscribe</button></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flexbox Layout</title>
+    <style>
+        .container {
+            display: flex;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .header {
+            background-color: rgb(91, 230, 98);
+            padding: 10px;
+            color: white;
+            text-align: center;
+        }
+
+        .column {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .column1 {
+            background-color: rgb(187, 216, 255);
+        }
+
+        .column2 {
+            background-color: rgb(187, 216, 255);
+        }
+
+        .column3 {
+            background-color: rgb(187, 216, 255);
+        }
+
+        .footer {
+            background-color: rgb(91, 230, 98);
+            padding: 10px;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Header</h1>
+    </div>
+
+    <div class="container">
+        <div class="column column1">
+            <h1>Column 1</h1>
+            <p>This is the first column.</p>
+        </div>
+
+        <div class="column column2">
+            <h1>Column 2</h1>
+            <p>This is the second column.</p>
+        </div>
+
+        <div class="column column3">
+            <h1>Column 3</h1>
+            <p>This is the third column.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+</body>
+
+</html>

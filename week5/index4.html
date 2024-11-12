@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flexbox Layout</title>
+    <style>
+        .container {
+            display: flex;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .nav {
+            display: flex;
+            background-color: rgb(33, 6, 150);
+            padding: 10px;
+        }
+
+        .header {
+            display: flex;
+            flex: 3;
+            justify-content: flex-start;
+            padding: 10px;
+            color: white;
+        }
+
+        .center {
+            display: flex;
+            flex: 1;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .word {
+            display: flex;
+            flex: 3;
+            color: white;
+            justify-content: flex-end;
+            margin: auto;
+            gap: 10px;
+        }
+
+        .column {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .column1 {
+            background-color: rgb(145, 244, 158);
+            flex: 1;
+        }
+
+        .column3 {
+            background-color: rgb(156, 194, 255);
+            flex: 3;
+        }
+
+        .column2 {
+            background-color: rgb(145, 244, 158);
+            flex: 3;
+        }
+
+        .column4 {
+            background-color: rgb(156, 194, 255);
+            flex: 1;
+        }
+
+        .footer {
+            background-color: rgb(33, 6, 150);
+            padding: 10px;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="header">
+            <h1>Header</h1>
+        </div>
+
+        <div class="word">
+            <div>Home</div>
+            <div>About Us</div>
+            <div>Information</div>
+            <div>Contact Us</div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="column column1">
+            <h1>Column 1</h1>
+            <p>This is the first column.</p>
+        </div>
+
+        <div class="column column3">
+            <h1>Column 3</h1>
+            <p>This is the third column.</p>
+        </div>
+
+    </div>
+
+    <div class="center">
+
+        <div class="column column2">
+            <h1>Column 2</h1>
+            <p>This is the second column.</p>
+        </div>
+
+        <div class="column column4">
+            <h1>Column 4</h1>
+            <p>This is fourth column.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+
+</body>
+
+</html>

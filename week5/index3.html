@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flexbox Layout</title>
+    <style>
+        .container {
+            display: flex;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .header {
+            background-color: rgb(52, 179, 58);
+            padding: 10px;
+            color: white;
+            text-align: center;
+        }
+
+        .side {
+            display: flex;
+        }
+
+        .sidebar {
+            background-color: rgb(169, 211, 243);
+            padding: 10px;
+        }
+
+        .center {
+            display: flex;
+            flex: 3;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+
+        .column {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .column1 {
+            background-color: rgb(145, 244, 158);
+        }
+
+        .column2 {
+            background-color: rgb(145, 244, 158);
+        }
+
+        .column3 {
+            background-color: rgb(145, 244, 158);
+        }
+
+        .footer {
+            background-color: rgb(52, 179, 58);
+            padding: 10px;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Header</h1>
+    </div>
+
+    <div class="container">
+
+        <div class="side">
+            <div class="sidebar">
+                <h1>Sidebar</h1>
+                <p>This is the sidebar content.</p>
+            </div>
+        </div>
+
+        <div class="center">
+            <div class="column column1">
+                <h1>Column 1</h1>
+                <p>This is the first column.</p>
+            </div>
+
+            <div class="column column2">
+                <h1>Column 2</h1>
+                <p>This is the second column.</p>
+            </div>
+
+            <div class="column column3">
+                <h1>Column 3</h1>
+                <p>This is the third column.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+</body>
+
+</html>
