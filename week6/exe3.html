@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Responsive Banner</title>
+    <style>
+        .nav {
+            display: flex;
+        }
+
+        .text {
+            color: black;
+            left: 0%;
+            /*position: absolute;*/
+            padding: 40px;
+        }
+
+        .pic {
+            height: auto;
+            size-adjust: auto;
+            right: 0%;
+            /*position: absolute;*/
+            flex: 1;
+        }
+
+        header {
+            flex: 1;
+        }
+
+        button {
+            background-color: rgb(239, 205, 154);
+            color: white;
+            border-color: rgb(239, 205, 154);
+            border-radius: 10px;
+            padding: 5px;
+        }
+
+        @media screen and (max-width: 600px) {
+
+            .pic {
+                flex: 1;
+                height: auto;
+                size-adjust: auto;
+                /*position: static;*/
+            }
+
+            .nav {
+                flex-direction: column-reverse;
+                height: auto;
+                text-size-adjust: 10px;
+            }
+
+            .text {
+                flex: 1;
+                justify-content: left;
+            }
+
+            .text a {
+                flex: 1;
+                text-align: left;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <div class="text">
+                <a>
+                    <h1>Elevate your style, embrace timeless elegance.</h1>
+                    <h4>Discover a world of exquisite craftsmanship and unparalleled beauty with our stunning collection
+                        of fine jewelry. Each piece is meticulously designed to capture the essence of grace and
+                        sophistication,reflecting your unique sense of style.</h4>
+                    <div><button>View Catalog</button></div>
+                </a>
+            </div>
+            <div class="pic">
+                <div><img src="images/lady.jpg" alt="logo" height="350px"></div>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Submenu</title>
+    <style>
+        header a {
+            text-decoration: none;
+        }
+
+        .menu {
+            display: flex;
+            color: white;
+            justify-content: space-between;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 500px;
+            padding-top: 15px;
+        }
+
+        .menu-item {
+            padding: 20px;
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .submenu a {
+            display: block;
+            text-align: left;
+            position: relative;
+            padding: 5px;
+        }
+
+        .menu-item:hover .submenu {
+            display: block;
+            padding: 10px;
+            block-size: auto;
+        }
+
+        .hover {
+            background-color: rgb(50, 50, 50);
+            padding: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .hover:hover {
+            background-color: rgb(121, 121, 121);
+        }
+
+        .logo {
+            padding-right: 100px;
+            padding-top: 30px;
+            align-items: center;
+            display: block;
+            width: 30px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+        }
+
+        @media screen and (max-width: 700px) {
+            .navbar {
+                flex-direction: column;
+                height: auto;
+                align-items: center;
+            }
+
+            .menu {
+                justify-content: center;
+            }
+
+            .menu a {
+                text-align: center;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/mini.png" alt="logo" height="90px">
+            </div>
+
+            <div class="menu">
+                <div class="menu-item">
+                    <div><a href="#">Home</a></div>
+                </div>
+                <div class="menu-item">
+                    <div><a href="#">About</a>
+                        <img src="images/down.png" alt="logo" height="10px">
+                    </div>
+                    <div class="submenu">
+                        <div class="hover"><a href="#">Mission</a></div>
+                        <div class="hover"><a href="#">Vision</a></div>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div><a href="#">Services</a><img src="images/down.png" alt="logo" height="10px"></div>
+                    <div class="submenu">
+                        <div class="hover">
+                            <a href="#">Web Development</a>
+                        </div>
+                        <div class="hover">
+                            <a href="#">App Development</a>
+                        </div>
+                        <div class="hover">
+                            <a href="#">SEO Services</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div>Contact</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <a href="#">Border</a>
+
+</body>
+
+</html>

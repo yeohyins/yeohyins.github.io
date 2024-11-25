@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Banner exe4</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .banner-container {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+        }
+
+        .banner-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .content-frame {
+            position: relative;
+            max-width: 500px;
+            margin-left: 40px;
+            padding: 40px 30px 30px;
+            text-align: center;
+            border-radius: 8px;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+            .content-frame {
+                -webkit-backdrop-filter: blur(10px);
+                backdrop-filter: blur(5px);
+                background-color: rgba(202, 202, 202, 0.167);
+            }
+        }
+
+        .logo {
+            position: absolute;
+            left: 50%;
+            top: -20px;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 40px;
+            background: white;
+            border-radius: 4px;
+            padding: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .banner-title {
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 16px;
+            line-height: 1.2;
+        }
+
+        .banner-text {
+            color: white;
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 24px;
+            opacity: 0.9;
+        }
+
+        .company-name {
+            font-weight: bold;
+        }
+
+        .learn-more-btn {
+            background-color: white;
+            color: black;
+            border: none;
+            padding: 12px 32px;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+        }
+
+        .learn-more-btn:hover {
+            background-color: #f0f0f0;
+        }
+
+        @media (max-width: 768px) {
+            .banner-container {
+                height: 400px;
+            }
+
+            .overlay {
+                padding: 16px;
+            }
+
+            .content-frame {
+                margin-left: 20px;
+                padding: 30px 20px 20px;
+            }
+
+            .banner-title {
+                font-size: 24px;
+                margin-bottom: 12px;
+            }
+
+            .banner-text {
+                font-size: 14px;
+                margin-bottom: 20px;
+            }
+
+            .learn-more-btn {
+                padding: 10px 24px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner-container">
+        <img src="images/roofers.jpg" alt="Construction workers on site" class="banner-image">
+        <div class="overlay">
+            <div class="content-frame">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Company Logo">
+                </div>
+                <h1 class="banner-title">
+                    Build Your Dream Home with Solid Structures Builders!
+                </h1>
+                <p class="banner-text">
+                    Looking for a reliable and experienced building company to bring your vision to life?
+                    <span class="company-name">Solid Structures Builders</span>
+                    is here to make your dream home a reality.
+                </p>
+                <button class="learn-more-btn">LEARN MORE</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
