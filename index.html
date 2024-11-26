@@ -84,21 +84,26 @@
             justify-content: center;
         }
 
-
-        .text {
-            display: flex;
-            flex: 1;
-            margin: 10px;
-        }
-
         .column4 {
             background-color: rgba(255, 255, 255, 0.568);
             border-radius: 8px;
             color: rgb(68, 41, 187);
-            padding: 50px;
+            padding: 60px;
             justify-content: center;
         }
 
+        .column5 {
+            background-color: rgba(255, 255, 255, 0.568);
+            border-radius: 8px;
+            color: rgb(68, 41, 187);
+            padding: 60px;
+            justify-content: center;
+        }
+
+        .text {
+            flex: 1;
+            margin: 10px;
+        }
 
         .dicon {
             display: flex;
@@ -118,6 +123,16 @@
             flex-direction: column;
             align-items: center;
         }
+
+        @media (max-width: 768px) {
+            .banner-container {
+                height: 400px;
+            }
+
+            .container {
+                flex-direction: column;
+            }
+        }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -127,7 +142,7 @@
 <body>
     <div class="header">
         <div class="logo">
-            <img src="images/space x.png" alt="logo" height="30px">
+            <img src="images/mini.png" alt="logo" height="90px">
         </div>
 
         <div class="icon">
@@ -155,8 +170,8 @@
                 <div><img src="images/book.png" alt="logo" height="15px">
                     <h1>Week 2</h1>
                     <hr>
-                    <h3>- Exercise 1</h3>
-                    <h3>- Exercise 2</h3>
+                    <h3><a href="week2/exe1.html">- Exercise 1</a></h3>
+                    <h3><a href="week2/exe2.html">- Exercise 2</a></h3>
                 </div>
             </div>
 
@@ -164,8 +179,8 @@
                 <div><img src="images/book.png" alt="logo" height="15px">
                     <h1>Week 3</h1>
                     <hr>
-                    <h3>- Exercise 1</h3>
-                    <h3>- Exercise 2</h3>
+                    <h3><a href="week3/exe1.html">- Exercise 1</a></h3>
+                    <h3><a href="week3/exe2.html">- Exercise 2</a></h3>
                 </div>
             </div>
 
@@ -173,31 +188,43 @@
                 <div><img src="images/book.png" alt="logo" height="15px">
                     <h1>Week 4</h1>
                     <hr>
-                    <h3>- Exercise 1</h3>
-                    <h3>- Exercise 2</h3>
+                    <h3><a href="week4/exe1.html">- Exercise 1</a></h3>
+                    <h3><a href="week4/exe2.html">- Exercise 2</a></h3>
                 </div>
             </div>
         </div>
 
-        <div class="text">
-            <div class="column column4">
+        <div class="container">
+            <div class="column column1">
                 <div><img src="images/book.png" alt="logo" height="15px">
                     <h1>Week 5</h1>
                     <hr>
-                    <h3>- Exercise 1</h3>
-                    <h3>- Exercise 2</h3>
+                    <h3><a href="week5/exe1.html">- Exercise 1</a></h3>
+                    <h3><a href="week5/exe2.html">- Exercise 2</a></h3>
+                    <h3><a href="week5/exe3.html">- Exercise 3</a></h3>
+                </div>
+            </div>
+
+            <div class="column column2">
+                <div><img src="images/book.png" alt="logo" height="15px">
+                    <h1>Week 6</h1>
+                    <hr>
+                    <h3><a href="week6/exe1.html">- Exercise 1</a></h3>
+                    <h3><a href="week6/exe2.html">- Exercise 2</a></h3>
+                    <h3><a href="week6/exe3.html">- Exercise 3</a></h3>
+                    <h3><a href="week6/exe4.html">- Exercise 4</a></h3>
                 </div>
             </div>
         </div>
-        <div class="footer">
-            <div class="dicon">
-                <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="logo" height="20px"></a>
-                <a href="https://www.instagram.com/"><img src="images/ins.png" alt="logo" height="20px"></a>
-                <a href="https://x.com/?lang=en/"><img src="images/twitter.png" alt="logo" height="20px"></a>
-            </div>
-            <div>
-                <h6>@ 2024 YEOH YINS. All rights reserved.</h6>
-            </div>
+    </div>
+    <div class="footer">
+        <div class="dicon">
+            <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="logo" height="20px"></a>
+            <a href="https://www.instagram.com/"><img src="images/ins.png" alt="logo" height="20px"></a>
+            <a href="https://x.com/?lang=en/"><img src="images/twitter.png" alt="logo" height="20px"></a>
+        </div>
+        <div>
+            <h6>@ 2024 YEOH YINS. All rights reserved.</h6>
         </div>
     </div>
 </body>
