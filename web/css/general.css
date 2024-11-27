@@ -110,7 +110,7 @@ footer{
     padding-bottom: 50px;
 }
 
-.mid{
+.footerMid{
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -118,7 +118,7 @@ footer{
 
 }
 
-.text{
+.footerText{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -126,12 +126,12 @@ footer{
     color: #8F8F8F;
 }
 
-.bottom{
+.footerBottom{
     display: flex;
     flex-direction: row;
 }
 
-.right{
+.footerRight{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
