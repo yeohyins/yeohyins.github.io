@@ -1,11 +1,12 @@
-section{
+section {
     padding-top: 15px;
     color: white;
     align-items: center;
     font-size: 20px;
+    text-align: justify;
 }
 
-.banner{
+.banner {
     display: flex;
     position: relative;
     max-width: 100%;
@@ -15,7 +16,7 @@ section{
     padding-bottom: 200px;
 }
 
-.title{
+.title {
     font-family: "Orbitron", sans-serif;
     font-weight: bold;
     position: absolute;
@@ -23,12 +24,12 @@ section{
     letter-spacing: 10px;
 }
 
-.centerText{
-    padding-left: 120px;
-    padding-right: 120px;
+.centerText {
+    padding-left: 10%;
+    padding-right: 10%;
     padding-bottom: 200px;
     display: flex;
-    width: 65%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -39,7 +40,7 @@ section{
     gap: 20px;
 }
 
-.imageCollection{
+.imageCollection {
     display: flex;
     position: relative;
     flex-direction: row;
@@ -49,12 +50,13 @@ section{
     width: 70%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 120px;
-    padding-right: 120px;
-    padding-bottom: 200px;;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 200px;
+    ;
 }
 
-.smallDiv{
+.smallDiv {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -63,17 +65,18 @@ section{
     width: 100%;
 }
 
-.midBanner{
+.midBanner {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 70%;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 200px;;
+    padding-bottom: 200px;
+    ;
 }
 
-.column{
+.column {
     display: flex;
     position: relative;
     flex-direction: row;
@@ -85,35 +88,55 @@ section{
     margin-right: auto;
 }
 
-.leftDiv{
+.column2 {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    padding-left: 8%;
+    padding-right: 8%;
+    width: 100%;
+    padding-bottom: 200px;
+    gap: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.leftDiv {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 70%;
     gap: 25px
 }
 
-.rightDiv{
+.rightDiv {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
     gap: 25px;
 }
 
-h1#big{
+h1#big {
     font-family: "Orbitron", sans-serif;
     font-weight: bold;
     position: absolute;
+    text-align: center;
     font-size: 48px;
-    width: 70%;
     letter-spacing: 10px;
     padding-bottom: 40px;
 }
 
-h1{
+h1 {
     font-family: "Orbitron", sans-serif;
     font-weight: bold;
     text-align: center;
     font-size: 48px;
     letter-spacing: 10px;
     padding-bottom: 40px;
+}
+
+p.bigText {
+    font-weight: bold;
+    font-size: 48px;
 }
