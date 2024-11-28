@@ -1,0 +1,32 @@
+section {
+    padding-top: 10%;
+    color: white;
+    align-items: left;
+    padding-left: 7%;
+}
+
+.title {
+    font-family: "Orbitron", sans-serif;
+    font-weight: bold;
+    position: absolute;
+    font-size: 72px;
+    letter-spacing: 10px;
+}
+
+.text {
+    font-family: "Exo 2", sans-serif;
+    font-size: 20px;
+    font-weight: light;
+    padding-bottom: 10%;
+    padding-top: 15%;
+    display: flex;
+    width: 80%;
+    margin-left: 0%;
+    margin-right: auto;
+    position: relative;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+    gap: 20px;
+}
