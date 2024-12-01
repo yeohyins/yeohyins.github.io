@@ -1,4 +1,5 @@
 section {
+    flex: 1;
     padding-top: 10%;
     color: white;
     align-items: left;
@@ -29,4 +30,10 @@ section {
     justify-content: left;
     text-align: left;
     gap: 20px;
+}
+
+.boldtext {
+    font-family: "Exo 2", sans-serif;
+    font-size: 20px;
+    font-weight: medium;
 }
