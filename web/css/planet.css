@@ -4,9 +4,11 @@ section {
     color: white;
     align-items: left;
     padding-left: 7%;
+    font-size: 20px;
+    text-align: justify;
 }
 
-.title {
+h1.title {
     font-family: "Orbitron", sans-serif;
     font-weight: bold;
     position: absolute;
@@ -15,25 +17,136 @@ section {
 }
 
 .text {
+    display: flex;
     font-family: "Exo 2", sans-serif;
     font-size: 20px;
-    font-weight: light;
     padding-bottom: 10%;
-    padding-top: 15%;
-    display: flex;
-    width: 80%;
+    padding-top: 19%;
+    padding-left: 0%;
+    padding-right: 10%;
+    width: 100%;
     margin-left: 0%;
     margin-right: auto;
-    position: relative;
+    /*position: absolute;*/
     flex-direction: column;
-    align-items: left;
-    justify-content: left;
-    text-align: left;
+    text-align: justify;
     gap: 20px;
 }
 
 .boldtext {
     font-family: "Exo 2", sans-serif;
+    padding-top: 5%;
     font-size: 20px;
-    font-weight: medium;
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+}
+
+p.boldText {
+    text-align: justify;
+    font-family: "Exo 2", sans-serif;
+    font-weight: bolder;
+}
+
+.container {
+    display: flex;
+}
+
+.left {
+    flex: 1;
+}
+
+.right {
+    flex: 1;
+    min-width: 50%;
+}
+
+.pic {
+    height: 87%;
+    size-adjust: 87%;
+}
+
+.down {
+    padding-right: 7%;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: 35%;
+    padding-bottom: 8%;
+    display: flex;
+    flex: 3;
+    justify-content: flex-end;
+}
+
+/* Responsive Design for Mobile */
+@media screen and (max-width: 768px) {
+    body {
+        padding-top: 90px;
+        /* Adjust padding for mobile */
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #242424;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 9;
+        padding: 10px 0;
+    }
+
+    .menu-toggle:checked+.mobile-menu+nav .nav-links {
+        display: flex;
+    }
+
+    .mobile-menu {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        /* Center vertically in the navigation bar */
+        right: 20px;
+        transform: translateY(-50%);
+        /* Adjust positioning to exact center */
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    h1.title {
+        font-size: 24px;
+        font-weight: bold;
+        /* Mobile font size adjustment */
+    }
+
+    .text {
+        font-size: 13px;
+        /* Mobile font size adjustment */
+    }
+
+    .boldtext {
+        font-size: 13px;
+        /* Mobile font size adjustment */
+    }
+
+    .pic {
+        width: 100%;
+        size-adjust: 100%;
+        /* Mobile image resizing */
+    }
+
+    .down {
+        padding-left: 7%;
+        padding-right: 7%;
+        height: 20%;
+        size-adjust: 20%;
+        padding-bottom: 15%;
+        /* Mobile button resizing */
+    }
 }
