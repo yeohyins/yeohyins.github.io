@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Exo+2:wght@400;500;700&display=swap');
+
+
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: rgb(22, 22, 22);
+    position: static;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 20px;
+
+}
+
+.nav-menu a {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-menu a:hover {
+    color: gray;
+
+}
+
+
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Exo 2', sans-serif;
+    background-color: black;
+    padding-top: 0px;
+}
+
+.section {
+    width: 100%;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+/*space*/
+
+
+#explore-space {
+    background: url('img/moonbg.png') no-repeat center center;
+    background-size: cover;
+}
+
+.title h1:first-child {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 80px;
+    font-weight: 100;
+    letter-spacing: 20%;
+    margin: 0;
+    margin-left: 50px;
+    padding: 0;
+}
+
+.title h1:last-child {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 180px;
+    font-weight: 100;
+    letter-spacing: 20%;
+    margin: 0;
+    margin-left: 50px;
+    margin-top: 0%;
+    padding: 0;
+}
+
+#explore-space p {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 20%;
+    width: 50%;
+    line-height: 1.6;
+    margin-top: 40px;
+    margin-left: 50px;
+    text-align: left;
+
+}
+
+#explore-space button {
+    font-family: 'Exo 2', sans-serif;
+    margin-left: 50px;
+    padding: 10px 30px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+#explore-space button:hover {
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+
+
+
+/*planet*/
+
+
+
+
+
+#planet {
+    background: url('images/planetbg.png') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+    padding-right: 20px;
+
+}
+
+#planet h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 140px;
+    font-weight: 100;
+    letter-spacing: 20%;
+    margin: 0;
+    margin-right: 150px;
+    padding: 0 20px 20px 0;
+
+}
+
+
+#planet p {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 20%;
+    width: 50%;
+    line-height: 1.6;
+    margin: 20px 0;
+    margin-right: 150px;
+    text-align: justify;
+
+}
+
+#planet button {
+    font-family: 'Exo 2', sans-serif;
+    margin-right: 150px;
+    padding: 10px 30px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+#planet button:hover {
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+
+
+
+/*myths*/
+
+
+
+#myths {
+    background: url('img/mythsbg.png') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+    padding-right: 20px;
+    color: white;
+}
+
+#myths h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 100;
+    letter-spacing: 20%;
+    font-size: 140px;
+    margin: 0;
+    margin-right: 150px;
+    padding: 0 20px 20px 0;
+
+}
+
+#myths p {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 20%;
+    width: 50%;
+    line-height: 1.6;
+    margin: 20px 0;
+    margin-right: 150px;
+    text-align: justify;
+
+}
+
+#myths button {
+    font-family: 'Exo 2', sans-serif;
+    margin-right: 150px;
+    padding: 10px 30px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+#myths button:hover {
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+
+
+
+/*footer*/
+
+
+.main-footer {
+    background-color: rgb(22, 22, 22);
+    color: white;
+    padding: 40px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40px;
+}
+
+.footer-section {
+    flex: 1;
+    padding-left: 10px;
+}
+
+.footer-section h4 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 16px;
+    color: gray;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-section ul li a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 14px;
+}
+
+.social-icons a img {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2);
+}

@@ -1,24 +1,83 @@
-<!DOCTYPE html>>
+<!DOCTYPE html>
 <html>
 
 <head>
     <title>General HTML</title>
-    <link rel="stylesheet" href="general.css">
+    <meta name="viewport" content="width=device-width, initial=scale-1.0">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <div class="nav">
+    <!--Navigation-->
+    <header class="nav">
         <div class="logo">
-            <img>
+            <img src="img/logo.png" alt="Logo">
         </div>
-        <div class="panel">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <!-- Hamburger menu icon -->
+        <label for="menu-toggle" class="mobile-menu">&#9776;</label>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="space.html" id="space">Space</a></li>
+                <li><a href="planet.html" id="planets">Planets</a></li>
+                <li><a href="myths.html" id="myths">Myths</a></li>
+                <li><a href="contact.html" id="contacts">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <!--Footer-->
+    <footer>
+        <div class="foot">
+            <div class="footerMid">
+                <div class="footerText">
+                    <p><a href="space.html" class="head">Space</a></p>
+                    <p><a href="terrestrialgiant.html" id="terrestrial">Terrestrial Planets</a></p>
+                    <p><a href="gasgiant.html" id="gasGiant">gasGiant</a></p>
+                    <p><a href="icegiant.html" id="iceGiant">Ice Giants</a></p>
+                </div>
+            </div>
+
+            <div class="footerMid">
+                <div class="footerText">
+                    <p><a href="planet.html" class="head">Planets</a></p>
+                    <p><a href="galaxy.html">Galaxy</a></p>
+                    <p><a href="profile.html">Profile</a></p>
+                    <p><a href="mission.html">Mission</a></p>
+                    <p><a href="technology.html" id="technology">Technology</a></p>
+                </div>
+
+            </div>
+
+            <div class="footerMid">
+                <p><a href="myths.html" class="head">Myths</a></p>
+            </div>
+
+            <div class="footerMid">
+                <p><a href="contact.html" class="head">Contact Us</a></p>
+            </div>
         </div>
-    </div>
 
-    <div class="footer">
-        <div class="social"></div>
-    </div>
+        <div class="footerBottom">
+            <div class="footerLeft">
+                <p>@SPACE.COM</p>
+            </div>
+            <div class="footerRight">
+                <a href="https://www.facebook.com/"><img src="img/facebook.png" alt="facebook logo" height="32px"
+                        width="33px"></a>
+                <a href="https://www.instagram.com/"><img src="img/instagram.png" alt="instagram logo"
+                        height="30px"></a>
+                <a href="https://web.whatsapp.com/"><img src="img/whatsapp.png" alt="whatsapp logo" height="30px"></a>
+                <a href="https://www.linkedin.com/login"><img src="img/linkedin.png" alt="linkedin logo"
+                        height="30px"></a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
