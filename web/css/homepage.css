@@ -66,7 +66,7 @@ html {
 
 
 #explore-space {
-    background: url('img/moonbg.png') no-repeat center center;
+    background: url('../../images/moonbg.png') no-repeat center center;
     background-size: cover;
 }
 
@@ -132,7 +132,7 @@ html {
 
 
 #planet {
-    background: url('images/planetbg.png') no-repeat center center;
+    background: url('../../images/planetbg.png') no-repeat center center;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -194,7 +194,7 @@ html {
 
 
 #myths {
-    background: url('img/mythsbg.png') no-repeat center center;
+    background: url('../../images/mythsbg.png') no-repeat center center;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -276,6 +276,8 @@ html {
 .footer-section h4 {
     font-family: 'Orbitron', sans-serif;
     font-size: 18px;
+    font-weight: 100;
+    letter-spacing: 20%;
     margin-bottom: 10px;
 }
 
@@ -291,6 +293,8 @@ html {
 .footer-section ul li a {
     font-family: 'Exo 2', sans-serif;
     font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 20%;
     color: gray;
     text-decoration: none;
     transition: color 0.3s ease-in-out;
