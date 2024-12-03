@@ -13,23 +13,23 @@ body {
     /* Increased top padding to add gap below the nav bar */
 }
 
-a{
+a {
     color: #8F8F8F;
     text-decoration: none;
 }
 
-a.head{
+a.head {
     font-weight: 500;
     font-size: 25px;
     color: white;
 }
 
-a:hover{
+a:hover {
     color: #ccc;
 }
 
 /* Navigation */
-.nav{
+.nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,7 +41,8 @@ a:hover{
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;  /* Ensuring it stays on top */
+    z-index: 1000;
+    /* Ensuring it stays on top */
     border-bottom: 1px solid #333;
 }
 
@@ -82,7 +83,6 @@ a:hover{
 
 .mobile-menu {
     display: none;
-    font-size: 24px;
     cursor: pointer;
     color: #fff;
     position: absolute;
@@ -90,17 +90,17 @@ a:hover{
     right: 20px;
 }
 
-footer{    
+footer {
     border-top: 1px solid #333;
     background-color: #101010;
     color: #8F8F8F;
     left: 0;
     bottom: 0;
     width: 100%;
-    padding:45px;
+    padding: 45px;
 }
 
-.foot{
+.foot {
     left: 0;
     bottom: 0;
     display: flex;
@@ -110,28 +110,29 @@ footer{
     padding-bottom: 50px;
 }
 
-.footerMid{
+.footerMid {
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    padding-right: 60px;
-
+    width: 120px;
+    padding: 10px;
 }
 
-.footerText{
+.footerText {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap:20px 30px;
+    gap: 20px 30px;
+    width: 80px;
+    font-size: 13px;
     color: #8F8F8F;
 }
 
-.footerBottom{
+.footerBottom {
     display: flex;
     flex-direction: row;
 }
 
-.footerRight{
+.footerRight {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -139,12 +140,35 @@ footer{
     gap: 20px;
 }
 
+.footerSocial {
+    height: 30px;
+    width: 30px;
+}
+
 
 /* Responsive Design for Mobile */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     body {
         padding-top: 80px;
-        /* Adjust padding for mobile */
+        font-size: 13px;
+    }
+
+    .logo img {
+        width: 30px;
+    }
+
+    a.head {
+        font-size: 13px;
+
+    }
+
+
+    .footerMid {
+        display: flex;
+        flex-direction: column;
+        width: 105px;
+        padding: 20px;
+        padding-right: 10px;
     }
 
     .nav-links {
@@ -167,7 +191,6 @@ footer{
 
     .mobile-menu {
         display: block;
-        font-size: 24px;
         cursor: pointer;
         color: #fff;
         position: absolute;
@@ -182,12 +205,24 @@ footer{
         margin: 10px 0;
     }
 
-    .mid{
+    .mid {
         padding-right: 30px;
     }
 
-    a.head{
-        font-size: 24px;
+    .footerSocial {
+        height: 25px;
+        width: 25px;
     }
-    
+
+    .url {
+        font-size: 16px;
+    }
+
+    .footerRight {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-left: auto;
+        gap: 15px;
+    }
 }
