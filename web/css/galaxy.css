@@ -140,3 +140,5 @@ p.bigText {
     font-weight: bold;
     font-size: 48px;
 }
+
+@media screen and (max-width: 800px) {}

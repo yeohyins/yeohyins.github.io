@@ -104,6 +104,14 @@ img#telescope {
     opacity: 55%;
 }
 
+.hide-item {
+    display: flex;
+}
+
+.show-item {
+    display: none;
+}
+
 @media screen and (max-width:800px) {
     .bannerDiv {
         height: 200px;
@@ -124,12 +132,6 @@ img#telescope {
         padding-left: 20px;
         padding-right: 20px;
         padding-bottom: 100px;
-        display: flex;
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-        position: relative;
-        flex-direction: column;
         align-items: normal;
         justify-content: left;
         text-align: left;
@@ -137,12 +139,11 @@ img#telescope {
     }
 
     .column {
-        display: flex;
-        position: relative;
-        flex-direction: row;
+        flex-direction: column;
+        align-items: center;
         padding-left: 10%;
         padding-right: 10%;
-        width: 70%;
+        width: 100%;
         gap: 40px;
         padding-bottom: 200px;
 
@@ -151,19 +152,32 @@ img#telescope {
     .leftDiv {
         display: flex;
         flex-direction: column;
-        width: 50%;
+        width: 70%;
         gap: 25px
     }
 
     .rightDiv {
         display: flex;
         flex-direction: column;
-        width: 50%;
+        width: 100%;
         gap: 25px;
     }
 
+    .title {
+        font-size: 24px;
+        letter-spacing: 10px;
+    }
+
     h1#big {
-        font-size: 16px;
+        font-size: 24px;
+    }
+
+    .hide-item {
+        display: none;
+    }
+
+    .show-item {
+        display: flex;
     }
 
     h1 {
@@ -175,8 +189,15 @@ img#telescope {
         text-transform: capitalize;
     }
 
-    .title {
-        font-size: 24px;
-        letter-spacing: 10px;
+    img#apollo {
+        object-fit: cover;
+        object-position: 0% 30%;
+        opacity: 55%;
     }
+
+    img#telescope {
+        object-fit: cover;
+        opacity: 55%;
+    }
+
 }
