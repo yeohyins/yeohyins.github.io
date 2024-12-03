@@ -10,7 +10,6 @@ body {
     background-color: #000000;
     color: #8F8F8F;
     padding-top: 70px;
-    /* Increased top padding to add gap below the nav bar */
 }
 
 a {
@@ -64,7 +63,6 @@ a:hover {
 .nav-links li a {
     text-decoration: none;
     color: #8F8F8F;
-    font-size: 1rem;
     transition: color 0.3s;
 }
 
@@ -113,7 +111,7 @@ footer {
 .footerMid {
     display: flex;
     flex-direction: column;
-    width: 120px;
+    width: 160px;
     padding: 10px;
 }
 
