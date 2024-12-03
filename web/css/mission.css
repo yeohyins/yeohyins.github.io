@@ -112,7 +112,18 @@ img#telescope {
     display: none;
 }
 
+.curved {
+    border-radius: 10%;
+}
+
+
 @media screen and (max-width:800px) {
+
+    body {
+        line-height: 18px;
+        font-size: 16px;
+    }
+
     .bannerDiv {
         height: 200px;
         display: flex;
@@ -153,6 +164,7 @@ img#telescope {
         display: flex;
         flex-direction: column;
         width: 70%;
+        height: 180px;
         gap: 25px
     }
 
@@ -164,7 +176,7 @@ img#telescope {
     }
 
     .title {
-        font-size: 24px;
+        font-size: 28px;
         letter-spacing: 10px;
     }
 
@@ -182,7 +194,7 @@ img#telescope {
 
     h1 {
         font-family: "Exo 2", sans-serif;
-        font-size: 16px;
+        font-size: 19px;
         text-align: left;
         padding-bottom: 6px;
         letter-spacing: 0px;
@@ -198,6 +210,12 @@ img#telescope {
     img#telescope {
         object-fit: cover;
         opacity: 55%;
+
+    }
+
+    .teleImg {
+        object-fit: cover;
+        object-position: 0% 80%;
     }
 
 }

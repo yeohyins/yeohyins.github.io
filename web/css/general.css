@@ -83,7 +83,6 @@ a:hover {
 
 .mobile-menu {
     display: none;
-    font-size: 24px;
     cursor: pointer;
     color: #fff;
     position: absolute;
@@ -114,9 +113,8 @@ footer {
 .footerMid {
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    padding-right: 60px;
-
+    width: 120px;
+    padding: 10px;
 }
 
 .footerText {
@@ -124,6 +122,8 @@ footer {
     flex-direction: column;
     justify-content: center;
     gap: 20px 30px;
+    width: 80px;
+    font-size: 13px;
     color: #8F8F8F;
 }
 
@@ -151,7 +151,24 @@ footer {
     body {
         padding-top: 80px;
         font-size: 13px;
-        /* Adjust padding for mobile */
+    }
+
+    .logo img {
+        width: 30px;
+    }
+
+    a.head {
+        font-size: 13px;
+
+    }
+
+
+    .footerMid {
+        display: flex;
+        flex-direction: column;
+        width: 105px;
+        padding: 20px;
+        padding-right: 10px;
     }
 
     .nav-links {
@@ -174,7 +191,6 @@ footer {
 
     .mobile-menu {
         display: block;
-        font-size: 24px;
         cursor: pointer;
         color: #fff;
         position: absolute;
@@ -193,16 +209,20 @@ footer {
         padding-right: 30px;
     }
 
-    a.head {
-        font-size: 24px;
-    }
-
     .footerSocial {
-        height: 30px;
-        width: 30px;
+        height: 25px;
+        width: 25px;
     }
 
     .url {
         font-size: 16px;
+    }
+
+    .footerRight {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-left: auto;
+        gap: 15px;
     }
 }
