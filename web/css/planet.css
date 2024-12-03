@@ -141,12 +141,22 @@ p.boldText {
         /* Mobile image resizing */
     }
 
-    .down {
-        padding-left: 7%;
-        padding-right: 7%;
-        height: 20%;
-        size-adjust: 20%;
+    .column2 {
         padding-bottom: 15%;
         /* Mobile button resizing */
+    }
+
+    .box {
+        display: flex;
+        justify-content: end;
+    }
+
+    .box img {
+        border-radius: 30px;
+    }
+
+    .box:hover {
+        transform: scale(1:1);
+        transition: 0.5s;
     }
 }
