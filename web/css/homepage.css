@@ -1,44 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Exo+2:wght@400;500;700&display=swap');
 
-
-
-.main-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 50px;
-    background-color: rgb(22, 22, 22);
-    position: static;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.logo img {
-    height: 40px;
-    width: auto;
-}
-
-.nav-menu {
-    display: flex;
-    gap: 20px;
-
-}
-
-.nav-menu a {
-    font-family: 'Exo 2', sans-serif;
-    font-size: 18px;
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
-}
-
-.nav-menu a:hover {
-    color: gray;
-
-}
-
-
-
 body,
 html {
     margin: 0;
@@ -322,4 +283,76 @@ html {
 
 .social-icons a img:hover {
     transform: scale(1.2);
+}
+
+
+
+@media (max-width: 768px) {
+
+    .section,
+    #planet,
+    #myths {
+        align-items: center;
+        text-align: center;
+    }
+
+    .section .title h1,
+    #planet h1,
+    #myths h1 {
+        font-size: 60px;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .section p,
+    #planet p,
+    #myths p {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .section button,
+    #planet button,
+    #myths button {
+        margin: 20px auto;
+        /* Centers button and adds margin for spacing */
+        display: block;
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+
+    .section,
+    #planet,
+    #myths {
+        align-items: center;
+        text-align: center;
+    }
+
+    .title h1,
+    #planet h1,
+    #myths h1 {
+        font-size: 40px;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .section p,
+    #planet p,
+    #myths p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .section button,
+    #planet button,
+    #myths button {
+        margin: 10px auto;
+        display: block;
+    }
 }
