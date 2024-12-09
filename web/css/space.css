@@ -1,0 +1,109 @@
+section {
+    flex: 1;
+    padding-top: 5%;
+    color: white;
+}
+
+.container {
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.title {
+    font-family: "Orbitron", sans-serif;
+    font-weight: bold;
+    font-size: 72px;
+    letter-spacing: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.column {
+    font-family: "Orbitron", sans-serif;
+    font-size: 24px;
+    text-align: center;
+}
+
+p {
+    font-size: 24px;
+    padding: 40px;
+}
+
+img {
+    width: 60%;
+    height: 90%;
+    border-radius: 171px;
+}
+
+/* Responsive Design for Mobile */
+@media screen and (max-width: 768px) {
+    body {
+        padding-top: 90px;
+        /* Adjust padding for mobile */
+    }
+
+    .nav-links {
+        display: none;
+        gap: 10px;
+        background-color: #242424;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 9;
+        padding: 10px;
+    }
+
+    .menu-toggle:checked+.mobile-menu+nav .nav-links {
+        display: flex;
+    }
+
+    .mobile-menu {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        /* Center vertically in the navigation bar */
+        right: 20px;
+        transform: translateY(-50%);
+        /* Adjust positioning to exact center */
+    }
+
+    .nav-links li {
+        margin: 10px;
+    }
+
+    .title {
+        font-size: 24px;
+        font-weight: bold;
+        /* Mobile font size adjustment */
+    }
+
+    .container {
+        display: flex;
+        padding-left: 10%;
+        padding-right: 10%;
+        flex-direction: column;
+    }
+
+    .column {
+        text-align: center;
+    }
+
+    p {
+        font-size: 13px;
+        padding: 40px;
+    }
+
+    img {
+        width: 40%;
+        height: 60%;
+        border-radius: 171px;
+    }
+}
