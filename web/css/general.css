@@ -10,6 +10,7 @@ body {
     background-color: #000000;
     color: #8F8F8F;
     padding-top: 70px;
+    font-size: 20px
 }
 
 a {
@@ -122,7 +123,6 @@ footer {
     justify-content: center;
     gap: 20px 30px;
     width: auto;
-    font-size: 13px;
     color: #8F8F8F;
 }
 
