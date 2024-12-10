@@ -76,12 +76,6 @@ html {
     transition: all 0.3s ease-in-out;
 }
 
-<<<<<<< HEAD
-#explore-space button:hover {
-    background-color: goldenrod;
-    color: black;
-    border-color: black;
-=======
 /* Button Base Styling */
 button {
     font-family: 'Exo 2', sans-serif;
@@ -96,7 +90,6 @@ button {
     position: relative;
     overflow: hidden;
     /* Ensures hover effects stay within boundaries */
->>>>>>> 84691fb473272fa0ccd621782a98d2a042b5c062
 }
 
 /* Hover Glow Effect */
