@@ -68,6 +68,7 @@ html {
 #explore-space button {
     font-family: 'Exo 2', sans-serif;
     margin-left: 50px;
+    /* Keep the margin for desktop */
     padding: 10px 30px;
     border: 2px solid white;
     background-color: black;
@@ -77,6 +78,7 @@ html {
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
 }
+
 
 #explore-space button:hover {
     background-color: white;
@@ -154,7 +156,7 @@ html {
 
 
 
-#myths {
+#myth {
     background: url('../../images/mythsbg.png') no-repeat center center;
     background-size: cover;
     display: flex;
@@ -166,7 +168,7 @@ html {
     color: white;
 }
 
-#myths h1 {
+#myth h1 {
     font-family: 'Orbitron', sans-serif;
     font-weight: 100;
     letter-spacing: 20%;
@@ -177,7 +179,7 @@ html {
 
 }
 
-#myths p {
+#myth p {
     font-family: 'Exo 2', sans-serif;
     font-size: 20px;
     font-weight: 100;
@@ -190,7 +192,7 @@ html {
 
 }
 
-#myths button {
+#myth button {
     font-family: 'Exo 2', sans-serif;
     margin-right: 150px;
     padding: 10px 30px;
@@ -203,7 +205,7 @@ html {
     transition: all 0.3s ease-in-out;
 }
 
-#myths button:hover {
+#myth button:hover {
     background-color: white;
     color: black;
     border-color: black;
@@ -211,21 +213,27 @@ html {
 
 
 
-
-
+@media (max-width: 768px) {
+    #explore-space button {
+        margin: 20px auto;
+        /* Center the button horizontally */
+        display: block;
+        /* Required for margin auto to work */
+    }
+}
 
 @media (max-width: 768px) {
 
     .section,
     #planet,
-    #myths {
+    #myth {
         align-items: center;
         text-align: center;
     }
 
     .section .title h1,
     #planet h1,
-    #myths h1 {
+    #myth h1 {
         font-size: 60px;
         margin-left: 0;
         margin-right: 0;
@@ -234,7 +242,7 @@ html {
 
     .section p,
     #planet p,
-    #myths p {
+    #myth p {
         width: 100%;
         margin-left: 0;
         margin-right: 0;
@@ -243,7 +251,7 @@ html {
 
     .section button,
     #planet button,
-    #myths button {
+    #myth button {
         margin: 20px auto;
         /* Centers button and adds margin for spacing */
         display: block;
@@ -255,14 +263,14 @@ html {
 
     .section,
     #planet,
-    #myths {
+    #myth {
         align-items: center;
         text-align: center;
     }
 
     .title h1,
     #planet h1,
-    #myths h1 {
+    #myth h1 {
         font-size: 40px;
         margin-left: 0;
         margin-right: 0;
@@ -271,14 +279,14 @@ html {
 
     .section p,
     #planet p,
-    #myths p {
+    #myth p {
         font-size: 16px;
         text-align: center;
     }
 
     .section button,
     #planet button,
-    #myths button {
+    #myth button {
         margin: 10px auto;
         display: block;
     }
