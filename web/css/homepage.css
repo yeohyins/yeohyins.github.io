@@ -67,7 +67,8 @@ html {
 
 #explore-space button {
     font-family: 'Exo 2', sans-serif;
-    margin: 0 auto;
+    margin-left: 50px;
+    /* Keep the margin for desktop */
     padding: 10px 30px;
     border: 2px solid white;
     background-color: black;
@@ -76,9 +77,8 @@ html {
     cursor: pointer;
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
-    display: block;
-    /* Required for margin auto centering */
 }
+
 
 #explore-space button:hover {
     background-color: white;
@@ -213,8 +213,14 @@ html {
 
 
 
-
-
+@media (max-width: 768px) {
+    #explore-space button {
+        margin: 20px auto;
+        /* Center the button horizontally */
+        display: block;
+        /* Required for margin auto to work */
+    }
+}
 
 @media (max-width: 768px) {
 
