@@ -79,7 +79,7 @@ html {
 }
 
 #explore-space button:hover {
-    background-color: white;
+    background-color: goldenrod;
     color: black;
     border-color: black;
 }
