@@ -1,9 +1,9 @@
 section {
     flex: 1;
-    padding-top: 10%;
+    margin-left: 5%;
+    margin-top: 5%;
     color: white;
     align-items: left;
-    padding-left: 7%;
     font-size: 20px;
     text-align: justify;
 }
@@ -11,199 +11,91 @@ section {
 h1.title {
     font-family: "Orbitron", sans-serif;
     font-weight: bold;
-    position: absolute;
     font-size: 72px;
     letter-spacing: 10px;
-    padding-left: 10px;
 }
 
 .text {
     display: flex;
     font-family: "Exo 2", sans-serif;
     font-size: 20px;
-    padding-bottom: 10%;
-    padding-top: 19%;
-    padding-left: 0%;
-    padding-right: 10%;
-    width: 100%;
-    margin-left: 0%;
-    margin-right: auto;
-    /*position: absolute;*/
     flex-direction: column;
     text-align: justify;
     gap: 20px;
 }
 
-.boldtext {
-    font-family: "Exo 2", sans-serif;
-    padding-top: 5%;
-    font-size: 20px;
-    display: flex;
-    text-align: justify;
-    flex-direction: column;
-}
-
-p.boldText {
-    text-align: justify;
-    font-family: "Exo 2", sans-serif;
-    font-weight: bolder;
-}
-
 .container {
+    position: relative;
     display: flex;
-    width: 100%;
+    flex-direction: column;
+    margin-bottom: 5%;
+    width: 80%;
 }
 
-.left {
-    flex: 1;
-    width: 50%;
+.hide-item {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    size-adjust: auto;
+    width: 95%;
+    height: 400px;
+    background-image: url(../img/planet.jpeg);
+    background-repeat: no-repeat;
+    background-position: right;
+    justify-content: flex-end;
 }
 
-.right {
-    flex: 1;
-    width: 50%;
+.text {
+    width: 80%;
 }
 
-.pic {
-    flex: 1;
-    height: 110%;
-    size-adjust: 110%;
-    justify-content: end;
-    object-fit: cover;
-    object-position: 0%;
-}
-
-.column2 {
+.column {
     display: flex;
     justify-content: end;
     gap: 15px;
-    padding-right: 10%;
+    padding-right: 5%;
     padding-bottom: 5%;
     padding-top: 10px;
 }
 
 .box {
-    height: 245px;
-    transition: transform: 0.5s ease;
+    gap: 10px;
 }
 
-.background-image {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    /* Full width of the container */
-    height: 400px;
-    /* Adjust the height as needed */
-    background-image: url(../img/planet.jpeg);
-    /* Path to your image */
-    background-size: cover;
-    /* Scale the image to cover the entire area */
-    background-position: right;
-    background-repeat: no-repeat;
-    /* Prevent the image from repeating */
-    align-items: flex-end;
-    justify-content: right;
-}
 
 
 /* Responsive Design for Mobile */
-@media screen and (max-width: 768px) {
-    body {
-        padding-top: 90px;
-        /* Adjust padding for mobile */
-    }
-
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        gap: 10px;
-        background-color: #242424;
-        position: absolute;
-        top: 70px;
-        right: 0;
-        width: 100%;
-        text-align: center;
-        z-index: 9;
-        padding: 10px;
-    }
-
-    .menu-toggle:checked+.mobile-menu+nav .nav-links {
-        display: flex;
-    }
-
-    .mobile-menu {
-        display: block;
-        font-size: 24px;
-        cursor: pointer;
-        color: #fff;
-        position: absolute;
-        top: 50%;
-        /* Center vertically in the navigation bar */
-        right: 20px;
-        transform: translateY(-50%);
-        /* Adjust positioning to exact center */
-    }
-
-    .nav-links li {
-        margin: 10px;
-    }
-
-    section {
-        padding-top: 10%;
-        align-items: left;
-        font-size: 20px;
-    }
-
-    .container {
-        flex-direction: column-reverse;
-        height: auto;
-    }
-
-    .left {
-        width: 100%;
-        /* Ensure both columns take full width */
-        flex: 1;
-        text-align: left;
-    }
+@media screen and (max-width: 900px) {
 
     h1.title {
         font-size: 24px;
         font-weight: bold;
-        margin-left: 5px;
         /* Mobile font size adjustment */
     }
 
     .text {
-        font-size: 13px;
-        padding-top: 10%;
-        /* Mobile font size adjustment */
-    }
-
-    .text p {
+        width: 95%;
         text-align: justify;
-    }
-
-    .boldtext {
         font-size: 13px;
-        padding-top: 2%;
         /* Mobile font size adjustment */
     }
 
-
-    .right {
-        flex: 1;
+    .container {
+        display: flex;
+        margin-bottom: 5%;
+        width: 100%;
     }
 
-    .background-image {
-        height: 400px;
-        width: 560px;
+    .hide-item {
+        height: 300px;
+        display: flex;
+        position: relative;
+        background-size: 100%;
         background-position: right;
-        background-position: top;
-        align-items: flex-end;
-        flex-direction: column;
+        justify-items: flex-end;
     }
 
-    .column2 {
+    .column {
         padding-bottom: 15%;
         /* Mobile button resizing */
     }
@@ -211,14 +103,9 @@ p.boldText {
     .box {
         display: flex;
         justify-content: center;
-        gap: 10%;
-        padding-top: 10px;
+        gap: 5px;
+        margin: 10px;
         height: 175px;
         /* Mobile button resizing */
-    }
-
-    .box:hover {
-        transform: scale(1:1);
-        transition: 0.5s;
     }
 }
