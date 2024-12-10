@@ -45,40 +45,6 @@ section {
         /* Adjust padding for mobile */
     }
 
-    .nav-links {
-        display: none;
-        gap: 10px;
-        background-color: #242424;
-        position: absolute;
-        top: 70px;
-        right: 0;
-        width: 100%;
-        text-align: center;
-        z-index: 9;
-        padding: 10px;
-    }
-
-    .menu-toggle:checked+.mobile-menu+nav .nav-links {
-        display: flex;
-    }
-
-    .mobile-menu {
-        display: block;
-        font-size: 24px;
-        cursor: pointer;
-        color: #fff;
-        position: absolute;
-        top: 50%;
-        /* Center vertically in the navigation bar */
-        right: 20px;
-        transform: translateY(-50%);
-        /* Adjust positioning to exact center */
-    }
-
-    .nav-links li {
-        margin: 10px;
-    }
-
     .title {
         font-size: 24px;
         font-weight: bold;
