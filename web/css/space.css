@@ -27,12 +27,12 @@ section {
     text-align: center;
 }
 
-p {
+.tex {
     font-size: 24px;
     padding: 40px;
 }
 
-img {
+.img img {
     width: 60%;
     height: 90%;
     border-radius: 171px;
@@ -96,12 +96,12 @@ img {
         text-align: center;
     }
 
-    p {
+    .tex {
         font-size: 13px;
         padding: 40px;
     }
 
-    img {
+    .img img {
         width: 40%;
         height: 60%;
         border-radius: 171px;
