@@ -22,9 +22,7 @@ html {
     box-sizing: border-box;
 }
 
-
 /*space*/
-
 
 #explore-space {
     background: url('../../images/moonbg.png') no-repeat center center;
@@ -62,12 +60,12 @@ html {
     margin-top: 40px;
     margin-left: 50px;
     text-align: left;
-
 }
 
 #explore-space button {
     font-family: 'Exo 2', sans-serif;
     margin-left: 50px;
+    /* Desktop-specific margin */
     padding: 10px 30px;
     border: 2px solid white;
     background-color: black;
@@ -78,19 +76,59 @@ html {
     transition: all 0.3s ease-in-out;
 }
 
+<<<<<<< HEAD
 #explore-space button:hover {
     background-color: goldenrod;
     color: black;
     border-color: black;
+=======
+/* Button Base Styling */
+button {
+    font-family: 'Exo 2', sans-serif;
+    padding: 10px 30px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    /* Ensures hover effects stay within boundaries */
+>>>>>>> 84691fb473272fa0ccd621782a98d2a042b5c062
 }
 
+/* Hover Glow Effect */
+button:hover {
+    color: #ffcc00;
+    /* Change text color to yellow */
+    border-color: #ffcc00;
+    /* Change border color to yellow */
+}
 
+/* Glowing Border Effect */
+button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #ffcc00;
+    /* Yellow glowing border */
+    border-radius: 10px;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 20px #ffcc00;
+    /* Glow effect */
+}
+
+button:hover::after {
+    opacity: 1;
+}
 
 /*planet*/
-
-
-
-
 
 #planet {
     background: url('../../images/planetbg.png') no-repeat center center;
@@ -101,7 +139,6 @@ html {
     align-items: flex-end;
     text-align: right;
     padding-right: 20px;
-
 }
 
 #planet h1 {
@@ -112,9 +149,7 @@ html {
     margin: 0;
     margin-right: 150px;
     padding: 0 20px 20px 0;
-
 }
-
 
 #planet p {
     font-family: 'Exo 2', sans-serif;
@@ -126,35 +161,15 @@ html {
     margin: 20px 0;
     margin-right: 150px;
     text-align: justify;
-
 }
 
 #planet button {
-    font-family: 'Exo 2', sans-serif;
     margin-right: 150px;
-    padding: 10px 30px;
-    border: 2px solid white;
-    background-color: black;
-    color: white;
-    font-size: 20px;
-    cursor: pointer;
-    border-radius: 10px;
-    transition: all 0.3s ease-in-out;
 }
-
-#planet button:hover {
-    background-color: white;
-    color: black;
-    border-color: black;
-}
-
-
 
 /*myths*/
 
-
-
-#myths {
+#myth {
     background: url('../../images/mythsbg.png') no-repeat center center;
     background-size: cover;
     display: flex;
@@ -166,7 +181,7 @@ html {
     color: white;
 }
 
-#myths h1 {
+#myth h1 {
     font-family: 'Orbitron', sans-serif;
     font-weight: 100;
     letter-spacing: 20%;
@@ -174,10 +189,9 @@ html {
     margin: 0;
     margin-right: 150px;
     padding: 0 20px 20px 0;
-
 }
 
-#myths p {
+#myth p {
     font-family: 'Exo 2', sans-serif;
     font-size: 20px;
     font-weight: 100;
@@ -187,45 +201,30 @@ html {
     margin: 20px 0;
     margin-right: 150px;
     text-align: justify;
-
 }
 
-#myths button {
-    font-family: 'Exo 2', sans-serif;
+#myth button {
     margin-right: 150px;
-    padding: 10px 30px;
-    border: 2px solid white;
-    background-color: black;
-    color: white;
-    font-size: 20px;
-    cursor: pointer;
-    border-radius: 10px;
-    transition: all 0.3s ease-in-out;
 }
 
-#myths button:hover {
-    background-color: white;
-    color: black;
-    border-color: black;
-}
-
-
-
-
-
+/* Responsive Styling */
 
 @media (max-width: 768px) {
+    #explore-space button {
+        margin: 20px auto;
+        display: block;
+    }
 
     .section,
     #planet,
-    #myths {
+    #myth {
         align-items: center;
         text-align: center;
     }
 
     .section .title h1,
     #planet h1,
-    #myths h1 {
+    #myth h1 {
         font-size: 60px;
         margin-left: 0;
         margin-right: 0;
@@ -234,7 +233,7 @@ html {
 
     .section p,
     #planet p,
-    #myths p {
+    #myth p {
         width: 100%;
         margin-left: 0;
         margin-right: 0;
@@ -243,26 +242,24 @@ html {
 
     .section button,
     #planet button,
-    #myths button {
+    #myth button {
         margin: 20px auto;
-        /* Centers button and adds margin for spacing */
         display: block;
     }
 }
 
-/* For mobile phones */
 @media (max-width: 480px) {
 
     .section,
     #planet,
-    #myths {
+    #myth {
         align-items: center;
         text-align: center;
     }
 
     .title h1,
     #planet h1,
-    #myths h1 {
+    #myth h1 {
         font-size: 40px;
         margin-left: 0;
         margin-right: 0;
@@ -271,14 +268,14 @@ html {
 
     .section p,
     #planet p,
-    #myths p {
+    #myth p {
         font-size: 16px;
         text-align: center;
     }
 
     .section button,
     #planet button,
-    #myths button {
+    #myth button {
         margin: 10px auto;
         display: block;
     }
