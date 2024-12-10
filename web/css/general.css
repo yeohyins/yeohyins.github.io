@@ -10,6 +10,7 @@ body {
     background-color: #000000;
     color: #8F8F8F;
     padding-top: 70px;
+    font-size: 20px
 }
 
 a {
@@ -104,14 +105,15 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: auto;
+    padding-left: 10%;
+    padding-right: 10%;
     padding-bottom: 50px;
 }
 
 .footerMid {
     display: flex;
     flex-direction: column;
-    width: 160px;
+    width: 180px;
     padding: 10px;
 }
 
@@ -120,8 +122,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     gap: 20px 30px;
-    width: 80px;
-    font-size: 13px;
+    width: auto;
     color: #8F8F8F;
 }
 
@@ -160,14 +161,20 @@ footer {
 
     }
 
-
+    .foot {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    
     .footerMid {
         display: flex;
         flex-direction: column;
-        width: 105px;
-        padding: 20px;
-        padding-right: 10px;
+        width: 180px;
+        padding: 10px;
     }
+
+
+    
 
     .nav-links {
         display: none;

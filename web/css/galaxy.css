@@ -2,6 +2,8 @@ section {
     padding-top: 15px;
     color: white;
     align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 h1 {
@@ -41,14 +43,13 @@ img {
     position: absolute;
     font-size: 72px;
     letter-spacing: 10px;
+    color: white;
 }
 
 .centerText {
-    padding-left: 20%;
-    padding-right: 20%;
     padding-bottom: 200px;
     display: flex;
-    width: 100%;
+    width: 75%;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -69,8 +70,6 @@ img {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 10%;
-    padding-right: 10%;
     padding-bottom: 200px;
 }
 
@@ -89,10 +88,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
+    width: 100%;
     height: 500px;
     padding-bottom: 200px;
 }
@@ -101,8 +97,6 @@ img {
     display: flex;
     position: relative;
     flex-direction: row;
-    padding-left: 20%;
-    padding-right: 20%;
     width: 100%;
     gap: 40px;
     padding-bottom: 200px;
@@ -114,8 +108,6 @@ img {
     display: flex;
     position: relative;
     flex-direction: row;
-    padding-left: 8%;
-    padding-right: 8%;
     width: 100%;
     padding-bottom: 200px;
     gap: 100px;
@@ -140,7 +132,7 @@ img {
 }
 
 .curved {
-    border-radius: 10%;
+    border-radius: 30px;
 }
 
 h1#big {
@@ -173,7 +165,9 @@ h1#big {
         display: flex;
         position: relative;
         max-width: 100%;
+        margin-top: auto;
         padding-bottom: 0px;
+        padding-top: 0px;
     }
 
     img#apollo {
@@ -184,20 +178,17 @@ h1#big {
 
     .centerText {
         padding-top: 80px;
-        padding-left: 20px;
-        padding-right: 20px;
         padding-bottom: 100px;
         align-items: normal;
         justify-content: left;
         text-align: left;
+        width: 100%;
         gap: 20px;
     }
 
     .column {
         flex-direction: column;
         align-items: center;
-        padding-left: 10%;
-        padding-right: 10%;
         width: 100%;
         gap: 40px;
         padding-bottom: 200px;
@@ -209,7 +200,7 @@ h1#big {
         flex-direction: column;
         width: 70%;
         height: 180px;
-        gap: 25px
+        gap: 25px;
     }
 
     .rightDiv {
@@ -235,29 +226,56 @@ h1#big {
     .show-item {
         display: flex;
     }
+    
 
     .imageCollection {
         display: flex;
         position: relative;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
         gap: 30px;
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 10%;
-        padding-right: 10%;
         padding-bottom: 10px;
     }
 
     .smallDiv {
         display: flex;
-        align-items: center;
-        justify-content: center;
+        text-align: left;
+        justify-content: left;
         width: 100%;
         height: 250px;
         gap: 20px;
         border-radius: 10%;
         padding-bottom: 50px;
+    }
+
+    .midBanner {
+        height: 300px;
+        padding-bottom: 40px;
+    }
+
+    .column2 {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 100px;
+        gap: 40px;
+    }
+    
+    .leftDiv {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        gap: 25px
+    }
+    
+    .rightDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 300px;
+        gap: 25px;
     }
 }
