@@ -1,14 +1,23 @@
 section {
     color: white;
     align-items: left;
-    padding-left: 7%;
     text-align: justify;
+}
+
+.container {
+    padding: 5%;
+    padding-top: 25%;
+
+}
+
+.columnup {
+    width: 80%;
 }
 
 h1.title {
     font-family: "Orbitron", sans-serif;
     font-weight: bold;
-    position: absolute;
+    position: relative;
     font-size: 72px;
     letter-spacing: 10px;
     padding-left: 10px;
@@ -18,39 +27,24 @@ h1.title {
     display: flex;
     font-family: "Exo 2", sans-serif;
     font-size: 20px;
-    padding-bottom: 10%;
-    padding-top: 10%;
     position: absolute;
     text-align: justify;
-    gap: 20px;
-}
-
-.boldtext {
-    font-family: "Exo 2", sans-serif;
-    padding-top: 5%;
-    font-size: 20px;
-    display: flex;
-    text-align: justify;
+    gap: 5%;
     flex-direction: column;
-}
-
-p.boldText {
-    text-align: justify;
-    font-family: "Exo 2", sans-serif;
-    font-weight: bolder;
 }
 
 .background-image {
     display: flex;
     flex-direction: row;
     width: 100%;
-    position: relative;
+    position: absolute;
     /* Full width of the container */
     height: 600px;
     /* Adjust the height as needed */
     background-image: url(../img/ter\ img.png);
     /* Path to your image */
     background-size: cover;
+    background-size: 90%;
     /* Scale the image to cover the entire area */
     background-position: right;
     background-repeat: no-repeat;
