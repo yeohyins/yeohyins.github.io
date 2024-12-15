@@ -23,18 +23,18 @@ section {
     text-align: center;
 }
 
-.text {
+.sText {
     font-size: 24px;
-    padding: 40px;
 }
 
 .space {
     display: flex;
     justify-content: center;
-    padding: 10px;
+    padding: 5px;
+    padding-bottom: 25px;
 }
 
-.img {
+img {
     border-radius: 171px;
 }
 
@@ -53,23 +53,20 @@ section {
 
     .container {
         display: flex;
-        padding-left: 10%;
-        padding-right: 10%;
+        gap: 50px;
         flex-direction: column;
     }
 
-    .column {
-        text-align: center;
-    }
-
-    .tex {
+    .sText {
         font-size: 13px;
-        padding: 40px;
     }
 
-    .img img {
-        width: 40%;
-        height: 60%;
+    .space {
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+
+    img {
         border-radius: 171px;
     }
 }
