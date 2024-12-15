@@ -16,6 +16,7 @@ body {
     font-family: "Exo 2", sans-serif;
     background-color: #000000;
     color: #8F8F8F;
+    font-size: 20px;
 }
 
 img {
@@ -55,9 +56,16 @@ h2 {
     letter-spacing: 10px;
 }
 
-p.sTitle {
+
+h3 {
+    font-family: "Exo 2", sans-serif;
     font-weight: bold;
     font-size: 32px;
+}
+
+p{
+    font-family: "Exo 2", sans-serif;
+    font-size: 20px;
 }
 
 
@@ -218,9 +226,13 @@ footer {
         padding-bottom: 6px;
     }
 
-    p.sTitle {
+    h3 {
         font-weight: bold;
         font-size: 16px;
+    }
+    
+    p{
+        font-size: 13px;
     }
 
     .topBanner {

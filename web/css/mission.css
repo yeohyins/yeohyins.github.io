@@ -8,13 +8,16 @@ h1 {
 }
 
 h2 {
+    padding-bottom: 50px;
     text-align: center;
 }
 
 .centerText {
     padding-bottom: 200px;
     display: flex;
-    width: 80%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -26,8 +29,6 @@ h2 {
     display: flex;
     position: relative;
     flex-direction: row;
-    padding-left: 20%;
-    padding-right: 20%;
     width: 100%;
     gap: 40px;
     padding-bottom: 200px;
@@ -72,10 +73,22 @@ img#telescope {
     display: none;
 }
 
+.topBanner{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h2#teletitle{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 
 @media screen and (max-width:800px) {
 
-    .bannerDiv {
+    .topBanner {
         height: 200px;
         display: flex;
         position: relative;

@@ -1,25 +1,11 @@
-section {
-    padding-top: 15px;
-    color: white;
-    align-items: center;
-    padding-left: 10%;
-    padding-right: 10%;
+img {
+    object-fit: cover;
 }
 
 h1 {
-    font-family: "Orbitron", sans-serif;
-    font-weight: bold;
+    position: absolute;
     text-align: center;
-    font-size: 48px;
-    letter-spacing: 10px;
-    padding-bottom: 40px;
-    text-transform: uppercase;
-}
 
-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
 img#moon {
@@ -28,53 +14,11 @@ img#moon {
     object-fit: fill;
 }
 
-h1#big {
-    font-family: "Orbitron", sans-serif;
-    font-weight: bold;
-    position: absolute;
-    text-align: center;
-    font-size: 48px;
-    letter-spacing: 10px;
-    padding-bottom: 40px;
-}
-
-p.bigText {
-    font-weight: bold;
-    font-size: 32px;
-}
-
-h1 {
-    font-family: "Orbitron", sans-serif;
-    font-weight: bold;
-    text-align: center;
-    font-size: 48px;
-    letter-spacing: 10px;
-    padding-bottom: 40px;
-    text-transform: uppercase;
-}
 
 .hr {
     border-width: 5%;
 }
 
-.bannerDiv {
-    display: flex;
-    position: relative;
-    max-width: 100%;
-    height: 100px;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 200px;
-}
-
-.title {
-    font-family: "Orbitron", sans-serif;
-    font-weight: bold;
-    position: absolute;
-    font-size: 72px;
-    letter-spacing: 10px;
-    color: white;
-}
 
 .centerText {
     padding-bottom: 200px;
@@ -160,4 +104,71 @@ h1 {
     justify-content: left;
     width: 50%;
     gap: 25px;
+}
+
+@media screen and (max-width: 800px) {
+
+    .topBanner{
+        height: 200px;
+        display: flex;
+        position: relative;
+        max-width: 100%;
+        margin-top: auto;
+        padding-bottom: 0px;
+        padding-top: 0px;
+    }
+
+    .centerText {
+        padding-top: 80px;
+        padding-bottom: 100px;
+        align-items: normal;
+        justify-content: left;
+        text-align: left;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .column {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 40px;
+        padding-bottom: 200px;
+
+    }
+    
+    .hide-item {
+        display: none;
+    }
+
+    .show-item {
+        display: flex;
+    }
+
+    .column2 {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 100px;
+        gap: 40px;
+    }
+
+    .leftDiv {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        gap: 25px
+    }
+
+    .rightDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 300px;
+        gap: 25px;
+    }
 }
