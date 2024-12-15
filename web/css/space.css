@@ -1,40 +1,40 @@
 section {
-    flex: 1;
-    padding-top: 5%;
-    color: white;
+    padding-top: 150px;
 }
 
 .container {
     display: flex;
-    margin-top: 5%;
-    margin-bottom: 10%;
-    padding-left: 10%;
-    padding-right: 10%;
+    gap: 3%;
+    padding-bottom: 100px;
+    justify-content: center;
+    align-items: center;
 }
 
 .title {
-    font-family: "Orbitron", sans-serif;
-    font-weight: bold;
     font-size: 72px;
-    letter-spacing: 10px;
-    align-items: center;
+    padding-bottom: 50px;
     text-align: center;
 }
 
 .column {
-    font-family: "Orbitron", sans-serif;
-    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
 }
 
-.tex {
+.text {
     font-size: 24px;
     padding: 40px;
 }
 
-.img img {
-    width: 60%;
-    height: 90%;
+.space {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.img {
     border-radius: 171px;
 }
 
