@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -63,7 +67,7 @@ h3 {
     font-size: 32px;
 }
 
-p{
+p {
     font-family: "Exo 2", sans-serif;
     font-size: 20px;
 }
@@ -78,8 +82,7 @@ p{
     align-items: center;
     justify-content: center;
     margin-top: auto;
-    top: 70px;
-    padding-bottom: 200px;
+    margin-bottom: 200px;
     color: white;
 }
 
@@ -91,18 +94,13 @@ p{
 /* Navigation */
 .nav {
     display: flex;
+    position: sticky;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
     padding-left: 60px;
     padding-right: 60px;
     background-color: #101010;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    /* Ensuring it stays on top */
     border-bottom: 1px solid #333;
     height: 75px;
 }
@@ -230,8 +228,8 @@ footer {
         font-weight: bold;
         font-size: 16px;
     }
-    
-    p{
+
+    p {
         font-size: 13px;
     }
 
