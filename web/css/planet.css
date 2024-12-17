@@ -80,7 +80,7 @@ h1.title {
     }
 
     .text {
-        width: 95%;
+        width: auto;
         text-align: justify;
         font-size: 13px;
         /* Mobile font size adjustment */
@@ -94,12 +94,13 @@ h1.title {
 
     .hide-item {
         height: 400px;
-        width: 540px;
+        width: auto;
         display: flex;
         position: relative;
         background-size: 100%;
         size-adjust: auto;
         justify-items: flex-end;
+        right: 0;
     }
 
     .column {

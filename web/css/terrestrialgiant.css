@@ -8,11 +8,8 @@ section {
     margin-top: 25%;
 }
 
-.columnup {
-    width: 80%;
-}
-
 .title {
+    position: relative;
     font-size: 72px;
     padding-bottom: 50px;
     text-align: left;
@@ -23,7 +20,6 @@ section {
     text-align: justify;
     gap: 5%;
     flex-direction: column;
-    width: 80%;
 }
 
 p {
@@ -35,9 +31,10 @@ p {
     display: flex;
     flex-direction: column;
     size-adjust: auto;
-    width: 100%;
+    width: 120%;
     height: 485px;
     background-image: url(../img/ter\ img.png);
+    right: 0;
     background-repeat: no-repeat;
     background-position: right;
     justify-content: flex-end;
@@ -69,11 +66,13 @@ p {
 /* Responsive Design for Mobile */
 @media screen and (max-width: 900px) {
     .background-image {
+        position: absolute;
         display: flex;
         flex-direction: column;
         size-adjust: auto;
-        width: 85%;
+        width: 100%;
         height: 465px;
+        right: 0;
         background-image: url(../img/ter\ img.png);
         background-repeat: no-repeat;
         background-position: right;
@@ -85,12 +84,7 @@ p {
     }
 
     .container {
-        margin-top: 75%;
-        width: 100%;
-    }
-
-    .text {
-        width: 100%;
+        margin-top: 80%;
     }
 
     .container1 {
