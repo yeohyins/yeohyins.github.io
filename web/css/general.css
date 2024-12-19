@@ -103,6 +103,7 @@ p {
     background-color: #101010;
     border-bottom: 1px solid #333;
     height: 75px;
+    z-index: 1;
 }
 
 .logo img {
