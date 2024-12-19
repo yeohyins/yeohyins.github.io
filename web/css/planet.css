@@ -8,19 +8,15 @@ section {
 }
 
 h1.title {
-    font-family: "Orbitron", sans-serif;
-    font-weight: bold;
-    font-size: 72px;
-    letter-spacing: 10px;
+    text-shadow: 5px 5px 6px black;
 }
 
 .text {
     display: flex;
-    font-family: "Exo 2", sans-serif;
-    font-size: 20px;
     flex-direction: column;
     text-align: justify;
     gap: 20px;
+    text-shadow: 5px 2px 4px black;
 }
 
 .container {
@@ -77,9 +73,7 @@ h1.title {
     }
 
     h1.title {
-        font-size: 24px;
         font-weight: bold;
-        /* Mobile font size adjustment */
     }
 
     .text {
@@ -96,7 +90,7 @@ h1.title {
     }
 
     .hide-item {
-        height: 400px;
+        height: 340px;
         display: flex;
         margin-left: auto;
         position: relative;
