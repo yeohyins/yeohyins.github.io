@@ -10,6 +10,7 @@ h1 {
 h2#teleBan {
     position: absolute;
     padding-bottom: 0px;
+    width: 70%;
 }
 
 h2 {
@@ -19,12 +20,14 @@ h2 {
 .centerText {
     display: flex;
     width: 100%;
+    margin-top: 20%;
+    margin-bottom: 20%;
+    position: relative;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     gap: 20px;
-    padding-bottom: 200px;
 }
 
 .column {
@@ -33,9 +36,7 @@ h2 {
     flex-direction: row;
     width: 100%;
     gap: 40px;
-    padding-bottom: 200px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-bottom: 30%;
 }
 
 .leftDiv {
@@ -109,15 +110,13 @@ h2#teletitle {
     }
 
     .centerText {
-        display: flex;
-        margin-top: 100px;
-        padding-left: 10%;
-        padding-right: 10%;
+        align-items: normal;
         justify-content: left;
         text-align: left;
-        align-items: left;
+        width: 100%;
         gap: 20px;
-        padding-bottom: 100px;
+        margin-top: 20%;
+        margin-bottom: 20%;
     }
 
     .column {

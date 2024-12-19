@@ -9,11 +9,10 @@
 }
 
 section {
-    padding-top: 15px;
     color: white;
     align-items: center;
-    padding-left: 10%;
-    padding-right: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 body {
@@ -50,6 +49,7 @@ h1 {
     font-size: 72px;
     letter-spacing: 10px;
     color: white;
+    width: 80%;
 }
 
 h2 {
@@ -78,11 +78,11 @@ p {
     display: flex;
     position: relative;
     max-width: 100%;
-    height: 500px;
+    height: 300px;
     align-items: center;
     justify-content: center;
     margin-top: auto;
-    margin-bottom: 200px;
+    margin-bottom: auto;
     color: white;
 }
 
@@ -103,6 +103,7 @@ p {
     background-color: #101010;
     border-bottom: 1px solid #333;
     height: 75px;
+    z-index: 1;
 }
 
 .logo img {
@@ -215,13 +216,8 @@ footer {
     }
 
     h2 {
-        font-family: "Exo 2", sans-serif;
-        font-weight: bold;
-        text-transform: none;
-        font-size: 19px;
         letter-spacing: normal;
         text-transform: capitalize;
-        padding-bottom: 6px;
     }
 
     h3 {
@@ -234,13 +230,7 @@ footer {
     }
 
     .topBanner {
-        height: 200px;
-        display: flex;
-        position: relative;
-        max-width: 100%;
-        margin-top: auto;
-        padding-bottom: 0px;
-        padding-top: 0px;
+        height: 150px;
     }
 
     .logo img {
@@ -249,7 +239,14 @@ footer {
 
     a.head {
         font-size: 16px;
+    }
 
+    .hide-item {
+        display: none;
+    }
+
+    .show-item {
+        display: flex;
     }
 
     .foot {
@@ -263,9 +260,6 @@ footer {
         width: 180px;
         padding: 10px;
     }
-
-
-
 
     .nav-links {
         display: none;
