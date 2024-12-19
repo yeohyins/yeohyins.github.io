@@ -39,7 +39,7 @@ img {
 }
 
 /* Responsive Design for Mobile */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     body {
         padding-top: 90px;
         /* Adjust padding for mobile */
