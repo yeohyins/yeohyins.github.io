@@ -114,8 +114,6 @@ h1.title {
     .box {
         display: flex;
         justify-content: center;
-        margin: 10px;
-        height: 155px;
         /* Mobile button resizing */
     }
 }
