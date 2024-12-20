@@ -72,8 +72,6 @@ p {
     font-size: 20px;
 }
 
-
-
 .topBanner {
     display: flex;
     position: relative;
@@ -81,6 +79,7 @@ p {
     height: 300px;
     align-items: center;
     justify-content: center;
+    text-align: center;
     margin-top: auto;
     margin-bottom: auto;
     color: white;
@@ -140,6 +139,10 @@ p {
     display: none;
 }
 
+.menu{
+    padding: 20px;
+}
+
 .mobile-menu {
     display: none;
     cursor: pointer;
@@ -147,6 +150,36 @@ p {
     position: absolute;
     top: 25px;
     right: 20px;
+}
+
+.subMenu {
+    margin-top: 30px;
+    background-color: #363636;
+    display: none;
+    position: absolute;
+    min-width: 70px;
+    top: 30px;
+    z-index: 1;
+    padding: 15px;
+}
+
+.subMenu a {
+    display: block;
+    text-align: left;
+}
+
+.menu:hover .subMenu {
+    display: block;
+}
+
+.choose {
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.choose:hover {
+    background-color: #525252;
 }
 
 footer {
@@ -216,8 +249,11 @@ footer {
     }
 
     h2 {
+        font-family: "Exo 2", sans-serif;
+    font-weight: bold;
         letter-spacing: normal;
         text-transform: capitalize;
+        font-size: 18px
     }
 
     h3 {
@@ -292,7 +328,7 @@ footer {
     }
 
     .nav-links li {
-        margin: 10px 0;
+        margin: 15px 0;
     }
 
     .mid {
