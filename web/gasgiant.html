@@ -2,21 +2,11 @@
 <html>
 
 <head>
-    <title>Gas Giant-Space/title>
+    <title>Gas Giant-Space/title</title>
         <meta name="viewport" content="width=device-width, initial=scale-1.0">
         <link rel="stylesheet" href="css/general.css">
         <link rel="stylesheet" href="css/gasgiant.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="css/demo.css">
-        <link
-            href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-            rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap"
-            rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="img/logo.png">
 </head>
 
 <body>
@@ -25,18 +15,52 @@
         <div class="logo">
             <a href="index.html" id="home"><img src="img/logo.png" alt="Logo"></a>
         </div>
-        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <input type="checkbox" id="menu-checkbox" style="display: none;">
         <!-- Hamburger menu icon -->
-        <label for="menu-toggle" class="mobile-menu">&#9776;</label>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="space.html" id="space">Space</a></li>
-                <li><a href="planet.html" id="planets">Planets</a></li>
-                <li><a href="myths.html" id="myths">Myths</a></li>
-                <li><a href="contact.html" id="contacts">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
+        <label for="menu-checkbox" class="menu-toggle">☰</label>
+            <nav>
+                <ul class="nav-links">
+                    <div class="menu">
+                        <li><a href="space.html" id="space">Space</a></li>
+                        <div class="subMenu">
+                            <div class="choose">
+                                <a href="galaxy.html">Galaxy</a>
+                            </div>
+                            <div class="choose">
+                                <a href="files/profile.html">Profile</a>
+                            </div>
+                            <div class="choose">
+                                <a href="technology.html">Technology</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu">
+                        <li><a href="planet.html" id="planets">Planets</a></li>
+                        <div class="subMenu">
+                            <div class="choose">
+                                <a href="terrestrialgiant.html">Terrestrial Giant</a>
+                            </div>
+                            <div class="choose">
+                                <a href="gasgiant.html">Gas Giant</a>
+                            </div>
+                            <div class="choose">
+                                <a href="files/iceGiant.html">Ice Giant</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu">
+                    <li><a href="myths.html" id="myths">Myths</a></li> 
+                    </div>
+                    
+                    <div class="menu">
+                        <li><a href="contact.html" id="contacts">Contact Us</a></li>
+                    </div>
+                    
+                </ul>
+            </nav>
+         </header>
 
     <section>
         <div class="background-image"></div>
