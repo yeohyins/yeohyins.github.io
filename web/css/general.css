@@ -82,7 +82,6 @@ p {
     align-items: center;
     justify-content: center;
     margin-top: auto;
-    margin-bottom: 200px;
     color: white;
 }
 
@@ -270,8 +269,6 @@ footer {
         position: relative;
         max-width: 100%;
         margin-top: auto;
-        padding-bottom: 0px;
-        padding-top: 0px;
     }
 
     .logo img {
@@ -284,14 +281,19 @@ footer {
     }
 
     .foot {
-        padding-left: 20%;
-        padding-right: 20%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 15%;
+        row-gap: 40px;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     .footerMid {
         display: flex;
         flex-direction: column;
-        width: 180px;
+        width: 140px;
         padding: 10px;
     }
 
