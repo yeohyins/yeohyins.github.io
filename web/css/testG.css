@@ -9,10 +9,11 @@
 }
 
 section {
+    padding-top: 15px;
     color: white;
     align-items: center;
-    margin-left: 10%;
-    margin-right: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 body {
@@ -49,7 +50,6 @@ h1 {
     font-size: 72px;
     letter-spacing: 10px;
     color: white;
-    width: 80%;
 }
 
 h2 {
@@ -72,16 +72,17 @@ p {
     font-size: 20px;
 }
 
+
+
 .topBanner {
     display: flex;
     position: relative;
     max-width: 100%;
-    height: 300px;
+    height: 500px;
     align-items: center;
     justify-content: center;
-    text-align: center;
     margin-top: auto;
-    margin-bottom: auto;
+    margin-bottom: 200px;
     color: white;
 }
 
@@ -113,14 +114,13 @@ p {
 .menu{
     display: flex;
     gap: 50px;
-    align-items: center;
+    list-style: none;
 }
 
 .menu a {
     text-decoration: none;
     color: #8F8F8F;
     transition: color 0.3s;
-    padding: 14px 20px;
 }
 
 .menu a:hover {
@@ -136,10 +136,6 @@ p {
     display: none;
 }
 
-.menu-item{
-    padding: 20px;
-}
-
 .mobile-menu {
     display: none;
     cursor: pointer;
@@ -149,8 +145,8 @@ p {
     right: 20px;
 }
 
-.subMenu {
-    margin-top: 30px;
+.subMenu{
+    margin-top: 25px;
     background-color: #363636;
     display: none;
     position: absolute;
@@ -159,17 +155,21 @@ p {
     padding: 15px;
 }
 
-.subMenu a {
+.subMenu a{
     display: block;
     text-decoration: none;
     text-align: left;
 }
 
-.menu-item:hover .subMenu {
+.menu-item{
+    padding: 20px;
+}
+
+.menu-item:hover .subMenu{
     display: block;
 }
 
-.choose {
+.choose{
     padding: 10px;
     padding-left: 15px;
     padding-right: 15px;
@@ -248,9 +248,11 @@ footer {
     h2 {
         font-family: "Exo 2", sans-serif;
         font-weight: bold;
+        text-transform: none;
+        font-size: 19px;
         letter-spacing: normal;
         text-transform: capitalize;
-        font-size: 18px
+        padding-bottom: 6px;
     }
 
     h3 {
@@ -263,7 +265,13 @@ footer {
     }
 
     .topBanner {
-        height: 150px;
+        height: 200px;
+        display: flex;
+        position: relative;
+        max-width: 100%;
+        margin-top: auto;
+        padding-bottom: 0px;
+        padding-top: 0px;
     }
 
     .logo img {
@@ -272,28 +280,19 @@ footer {
 
     a.head {
         font-size: 16px;
-    }
 
-    .hide-item {
-        display: none;
-    }
-
-    .show-item {
-        display: flex;
     }
 
     .foot {
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        gap: 15%;
-        row-gap: 40px;
+        padding-left: 20%;
+        padding-right: 20%;
     }
 
     .footerMid {
         display: flex;
         flex-direction: column;
-        width: 130px;
+        width: 180px;
+        padding: 10px;
     }
 
     .menu {
@@ -302,7 +301,7 @@ footer {
         flex-direction: column;
         gap: 10px;
         position: absolute;
-        top: 75px;
+        top: 70px;
         right: 0;
         width: 100%;
         text-align: center;

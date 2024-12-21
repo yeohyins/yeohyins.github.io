@@ -10,7 +10,7 @@ section {
     align-items: center;
 }
 
-.title {
+h1.title {
     font-size: 72px;
     padding-bottom: 50px;
     text-align: center;
