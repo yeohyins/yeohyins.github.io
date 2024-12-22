@@ -82,7 +82,6 @@ p {
     align-items: center;
     justify-content: center;
     margin-top: auto;
-    margin-bottom: 200px;
     color: white;
 }
 
@@ -92,7 +91,7 @@ p {
 
 
 /* Navigation */
-.nav {
+.navbar {
     display: flex;
     position: sticky;
     justify-content: space-between;
@@ -106,32 +105,28 @@ p {
     z-index: 1;
 }
 
-.logo img {
+.logo{
     width: 50px;
 }
 
 /* Navigation Links */
-.nav-links {
+.menu{
     display: flex;
     gap: 50px;
     list-style: none;
 }
 
-.nav-links li {
-    display: inline-block;
-}
-
-.nav-links li a {
+.menu a {
     text-decoration: none;
     color: #8F8F8F;
     transition: color 0.3s;
 }
 
-.nav-links li a:hover {
+.menu a:hover {
     color: #ccc;
 }
 
-.nav-links li a:active {
+.menu a:active {
     color: white;
 }
 
@@ -147,6 +142,40 @@ p {
     position: absolute;
     top: 25px;
     right: 20px;
+}
+
+.subMenu{
+    margin-top: 25px;
+    background-color: #363636;
+    display: none;
+    position: absolute;
+    min-width: 70px;
+    z-index: 1;
+    padding: 15px;
+}
+
+.subMenu a{
+    display: block;
+    text-decoration: none;
+    text-align: left;
+}
+
+.menu-item{
+    padding: 20px;
+}
+
+.menu-item:hover .subMenu{
+    display: block;
+}
+
+.choose{
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.choose:hover {
+    background-color: #525252;
 }
 
 footer {
@@ -240,8 +269,6 @@ footer {
         position: relative;
         max-width: 100%;
         margin-top: auto;
-        padding-bottom: 0px;
-        padding-top: 0px;
     }
 
     .logo img {
@@ -254,35 +281,37 @@ footer {
     }
 
     .foot {
-        padding-left: 20%;
-        padding-right: 20%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 15%;
+        row-gap: 40px;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     .footerMid {
         display: flex;
         flex-direction: column;
-        width: 180px;
+        width: 140px;
         padding: 10px;
     }
 
-
-
-
-    .nav-links {
+    .menu {
+        background-color: #242424;
         display: none;
         flex-direction: column;
         gap: 10px;
-        background-color: #242424;
         position: absolute;
         top: 70px;
         right: 0;
         width: 100%;
         text-align: center;
-        z-index: 9;
-        padding: 10px 0;
+        z-index: 1000;
+        padding: 10px;
     }
 
-    .menu-toggle:checked+.mobile-menu+nav .nav-links {
+    .menu-toggle:checked+.mobile-menu+ .menu {
         display: flex;
     }
 
@@ -296,10 +325,6 @@ footer {
         right: 20px;
         transform: translateY(-50%);
         /* Adjust positioning to exact center */
-    }
-
-    .nav-links li {
-        margin: 10px 0;
     }
 
     .mid {

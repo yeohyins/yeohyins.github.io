@@ -4,16 +4,12 @@ section {
 }
 
 .background-image {
-    position: absolute;
     display: flex;
     flex-direction: column;
-    size-adjust: auto;
     width: 120%;
-    height: 485px;
+    height: auto;
     background-image: url(../img/gasgiants.png);
-    right: 0;
     background-repeat: no-repeat;
-    background-position: right;
     justify-content: flex-end;
     opacity: 80%;
 }

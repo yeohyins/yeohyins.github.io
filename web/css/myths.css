@@ -7,6 +7,10 @@ h1 {
     text-align: center;
 }
 
+h3{
+    height: 100px;
+}
+
 img#moon {
     height: auto;
     width: auto;
@@ -32,6 +36,7 @@ img#moon {
     justify-content: center;
     text-align: center;
     gap: 20px;
+    margin-top: 20%;
 }
 
 .column {
@@ -40,7 +45,20 @@ img#moon {
     flex-direction: row;
     width: 100%;
     gap: 40px;
-    margin-bottom: 200px;
+    margin-bottom: 20%;
+    margin-top: 20%;
+}
+
+.mc{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    gap: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30%;
 }
 
 .midColumn {
@@ -49,17 +67,16 @@ img#moon {
     flex-direction: row;
     align-items: center;
     width: 100%;
-    height: 800px;
+    height: 100%;
     gap: 40px;
-    margin-bottom: 200px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20%;
 }
 
 .leftDiv#moonLeft {
     display: flex;
     position: absolute;
-    left: 0;
     flex-direction: column;
     width: 50%;
     height: auto;
@@ -68,11 +85,11 @@ img#moon {
 
 .rightDiv#moonRight {
     display: flex;
-    position: absolute;
+    position: relative;
     right: 0;
     flex-direction: column;
+    margin-left: auto;
     align-items: left;
-    justify-content: left;
     text-align: left;
     width: 50%;
     gap: 25px;
@@ -99,6 +116,10 @@ img#moon {
 
     section {
         margin-top: 120px;
+    }
+
+    h3{
+        height: auto;
     }
 
     img#moon {
@@ -130,8 +151,7 @@ img#moon {
         align-items: center;
         width: 100%;
         gap: 70px;
-        margin-bottom: 100px;
-
+        margin-bottom:20%;
     }
 
     .leftDiv {
@@ -157,29 +177,26 @@ img#moon {
         position: relative;
         flex-direction: column;
         width: 100%;
-        height: 450px;
-        gap: 40px;
-        margin-bottom: 30px;
+        height: 100%;
+        gap: 0px;
+        margin-bottom: 30%;
     }
 
-    .leftDiv#moonLeft {
+    .leftDiv#moonLeft{
         display: flex;
         position: absolute;
         flex-direction: column;
-        width: 45%;
+        width: 50%;
         height: auto;
-        left: auto;
+        gap: 25px;
         right: 0;
-        gap: 25px
     }
 
     .rightDiv#moonRight {
-        margin-top: 100px;
+        margin-top: 20%;
         display: flex;
-        position: absolute;
         flex-direction: column;
         align-items: left;
-        justify-content: left;
         text-align: left;
         width: 100%;
         gap: 25px;
