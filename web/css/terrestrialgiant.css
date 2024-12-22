@@ -15,6 +15,7 @@ section {
     position: relative;
     padding-bottom: 50px;
     text-align: left;
+    text-shadow: 5px 2px 4px black;
 }
 
 .text {
@@ -26,12 +27,13 @@ section {
 }
 
 .container1 {
-    display: flex;
+    display: grid;
     gap: 3%;
     margin-top: 50px;
     margin-bottom: 100px;
     justify-content: center;
     align-items: center;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .column {
@@ -67,15 +69,14 @@ section {
     }
 
     .container1 {
-        display: flex;
-        gap: 50px;
+        display: grid;
+        gap: 10px;
         flex-direction: column;
         justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .column {
-        display: flex;
-        width: 40%;
         height: auto;
     }
 
