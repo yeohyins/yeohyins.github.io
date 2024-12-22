@@ -11,7 +11,7 @@ section {
     margin-top: 25%;
 }
 
-.title {
+h1 {
     position: relative;
     padding-bottom: 50px;
     text-align: left;
@@ -26,9 +26,9 @@ section {
     flex-direction: column;
 }
 
-.container1 {
+.buttoncolumn {
     display: grid;
-    gap: 3%;
+    gap: 3px;
     margin-top: 50px;
     margin-bottom: 100px;
     justify-content: center;
@@ -43,7 +43,7 @@ section {
     text-align: center;
 }
 
-.planet {
+.planetbutton {
     display: flex;
     justify-content: center;
     padding: 5px;
@@ -56,7 +56,7 @@ section {
         background-size: 120%;
     }
 
-    .title {
+    h1 {
         width: 50%;
     }
 
@@ -68,7 +68,7 @@ section {
         gap: 10px;
     }
 
-    .container1 {
+    .buttoncolumn {
         display: grid;
         gap: 10px;
         flex-direction: column;
@@ -80,7 +80,7 @@ section {
         height: auto;
     }
 
-    .planet {
+    .planetbutton {
         width: 100%;
         height: 100%;
     }
