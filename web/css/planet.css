@@ -7,7 +7,7 @@ section {
     text-align: justify;
 }
 
-h1.title{
+h1.title {
     text-align: left;
     text-shadow: 5px 5px 6px black;
     width: 100%;
@@ -31,7 +31,7 @@ h1.title{
     width: 80%;
 }
 
-.hide-item {
+.background-image {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -47,7 +47,7 @@ h1.title{
     width: 80%;
 }
 
-.container1 {
+.button {
     display: flex;
     justify-content: end;
     gap: 15px;
@@ -93,7 +93,7 @@ h1.title{
         width: 100%;
     }
 
-    .hide-item {
+    .background-image {
         height: 340px;
         display: flex;
         margin-left: auto;
