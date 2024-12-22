@@ -3,14 +3,20 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    padding-bottom: 50px;
+}
+
 h2#teleBan {
     position: absolute;
     padding-bottom: 0px;
     width: 70%;
 }
 
-h2 {
-    padding-bottom: 50px;
+h2#teletitle {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 img {
@@ -45,7 +51,7 @@ img#telescope {
     align-items: center;
     width: 100%;
     gap: 40px;
-    margin-bottom: 30%;
+    margin-bottom: 20%;
 }
 
 .leftDiv {
@@ -76,28 +82,21 @@ img#telescope {
     text-align: center;
 }
 
-h2#teletitle {
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-
 @media screen and (max-width:800px) {
 
     h2 {
         padding-bottom: 0;
     }
 
+    img#apollo {
+        object-fit: cover;
+        opacity: 55%;
+    }
+    
     .topBanner {
         height: 200px;
         max-width: 100%;
         padding-bottom: 0px;
-    }
-
-    img#apollo {
-        object-fit: cover;
-        opacity: 55%;
     }
 
     .centerText {

@@ -9,11 +9,9 @@
 }
 
 section {
-    padding-top: 15px;
     color: white;
     align-items: center;
-    padding-left: 10%;
-    padding-right: 10%;
+    margin: 10%;
 }
 
 body {
@@ -109,11 +107,13 @@ p {
     width: 50px;
 }
 
-/* Navigation Links */
+/* Navigation css*/
 .menu{
     display: flex;
     gap: 50px;
     list-style: none;
+    padding: 0px;
+    margin: 0px;
 }
 
 .menu a {
@@ -144,6 +144,14 @@ p {
     right: 20px;
 }
 
+.menu-item{
+    padding: 0px;
+}
+
+.menu-item:hover .subMenu{
+    display: block;
+}
+
 .subMenu{
     margin-top: 25px;
     background-color: #363636;
@@ -160,14 +168,6 @@ p {
     text-align: left;
 }
 
-.menu-item{
-    padding: 20px;
-}
-
-.menu-item:hover .subMenu{
-    display: block;
-}
-
 .choose{
     padding: 10px;
     padding-left: 15px;
@@ -178,6 +178,7 @@ p {
     background-color: #525252;
 }
 
+/* Footer css */
 footer {
     border-top: 1px solid #333;
     background-color: #101010;
@@ -302,13 +303,36 @@ footer {
         display: none;
         flex-direction: column;
         gap: 10px;
-        position: absolute;
-        top: 70px;
+        position: fixed;
+        top: 75px;
         right: 0;
         width: 100%;
         text-align: center;
         z-index: 1000;
-        padding: 10px;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+
+    .menu-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .subMenu {
+        display: block;
+        position: static;
+        width: 100%;
+    }
+
+    .subMenu a{
+        text-align: center;
+    }
+
+    .choose{
+        text-align: center;
     }
 
     .menu-toggle:checked+.mobile-menu+ .menu {
