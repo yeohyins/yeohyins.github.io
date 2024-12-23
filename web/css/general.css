@@ -144,14 +144,8 @@ p {
     right: 20px;
 }
 
-<<<<<<< HEAD
 .menu-item {
     padding: 0px;
-=======
-.menu-item{
-    padding-top: 25px;
-    padding-bottom: 25px;
->>>>>>> 8418148fd1a8a01eb2f45af1128a77afbdd3f4a2
 }
 
 .menu-item:hover .subMenu {
@@ -325,14 +319,11 @@ footer {
         justify-content: center;
         align-items: center;
         text-align: center;
-        padding: 0px;
-    
     }
 
     .subMenu {
         display: block;
         position: static;
-        margin: 20px;
         width: 100%;
     }
 
