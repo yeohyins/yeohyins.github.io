@@ -104,12 +104,12 @@ p {
     z-index: 1;
 }
 
-.logo{
+.logo {
     width: 50px;
 }
 
 /* Navigation css*/
-.menu{
+.menu {
     display: flex;
     gap: 50px;
     list-style: none;
@@ -145,16 +145,15 @@ p {
     right: 20px;
 }
 
-.menu-item{
-    padding-top: 25px;
-    padding-bottom: 25px;
+.menu-item {
+    padding: 0px;
 }
 
-.menu-item:hover .subMenu{
+.menu-item:hover .subMenu {
     display: block;
 }
 
-.subMenu{
+.subMenu {
     margin-top: 25px;
     background-color: #363636;
     display: none;
@@ -164,13 +163,13 @@ p {
     padding: 15px;
 }
 
-.subMenu a{
+.subMenu a {
     display: block;
     text-decoration: none;
     text-align: left;
 }
 
-.choose{
+.choose {
     padding: 10px;
     padding-left: 15px;
     padding-right: 15px;
@@ -315,32 +314,29 @@ footer {
         padding-bottom: 3%;
     }
 
-    .menu-item{
+    .menu-item {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
-        padding: 0px;
-    
     }
 
     .subMenu {
         display: block;
         position: static;
-        margin: 20px;
         width: 100%;
     }
 
-    .subMenu a{
+    .subMenu a {
         text-align: center;
     }
 
-    .choose{
+    .choose {
         text-align: center;
     }
 
-    .menu-toggle:checked+.mobile-menu+ .menu {
+    .menu-toggle:checked+.mobile-menu+.menu {
         display: flex;
     }
 
