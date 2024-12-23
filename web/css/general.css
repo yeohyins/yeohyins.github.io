@@ -110,7 +110,7 @@ p {
 /* Navigation css*/
 .menu {
     display: flex;
-    gap: 50px;
+    gap: 10px;
     list-style: none;
     padding: 0px;
     margin: 0px;
@@ -144,8 +144,8 @@ p {
     right: 20px;
 }
 
-.menu-item {
-    padding: 0px;
+.menu-item{
+    padding: 30px;
 }
 
 .menu-item:hover .subMenu {
