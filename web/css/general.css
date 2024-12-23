@@ -108,6 +108,7 @@ b {
 
 .logo {
     width: 50px;
+    height: 40px;
 }
 
 /* Navigation css*/
@@ -238,8 +239,8 @@ footer {
 }
 
 .footerLeft {
-    height: 60px;
-    width: 60px;
+    height: 40px;
+    width: 50px;
 }
 
 /* Responsive Design for Mobile */

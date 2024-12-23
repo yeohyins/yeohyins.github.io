@@ -103,6 +103,12 @@ h1 {
         padding-bottom: 100px;
         gap: 40px;
     }
+
+    .textBox{
+        display: flex;
+        flex-direction: column;
+    }
+
     .leftDiv {
         display: flex;
         flex-direction: column;
