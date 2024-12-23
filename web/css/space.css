@@ -1,14 +1,14 @@
 .container {
-    display: grid;
+    display: flex;
     gap: 3%;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    grid-template-columns: repeat(4, 1fr);
+    flex-wrap: nowrap;
 }
 
-h1.title {
-    font-size: 72px;
+h1 {
     padding-bottom: 50px;
     text-align: center;
 }
@@ -28,7 +28,6 @@ h1.title {
     display: flex;
     justify-content: center;
     padding: 5px;
-    padding-bottom: 25px;
 }
 
 img {
@@ -38,26 +37,26 @@ img {
 /* Responsive Design for Mobile */
 @media screen and (max-width: 800px) {
     section {
-        padding-top: 90px;
+        padding-top: 20px;
     }
 
-    .title {
-        font-size: 24px;
-        font-weight: bold;
+    h1 {
+        text-align: center;
     }
 
     .container {
-        display: grid;
+        display: flex;
         gap: 10px;
-        flex-direction: column;
-
-        grid-template-columns: repeat(2, 1fr);
+        flex: 1;
+        flex-wrap: wrap;
 
     }
 
     .column {
         height: auto;
-        padding-bottom: 15%;
+        padding-bottom: 15px;
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
     }
 
     .sText {
