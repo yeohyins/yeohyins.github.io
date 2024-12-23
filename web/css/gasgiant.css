@@ -7,42 +7,52 @@ section {
     margin: 0%;
 }
 
-.container {
-    padding: 0% 10%;
-    padding-top: 20%;
-    padding-bottom: 5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    gap: 5%;
-}
-
 h3 {
     position: relative;
 }
 
-h1 {
-    position: relative;
-    text-align: left;
+h1{
+    margin-bottom: 3%;
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    margin: 10%;
+    margin-top: 0%;
     text-shadow: 5px 2px 4px black;
 }
 
-.text {
+.text{
+    margin-top: 25%;
+}
+
+.mainText {
     display: flex;
     position: relative;
     text-align: justify;
-    width: 100%;
     gap: 20px;
     flex-direction: column;
+    width: 50%;
+}
+
+.box{
+    display: flex;
+    display: row;
+    justify-content: left;
+    gap: 5%;
+    top: 0;
 }
 
 .buttoncolumn {
-    display: flex;
-    gap: 8px;
-    width: 50%;
-    justify-content: flex-end;
-    align-items: right;
+    display: flex;;
+    gap: 3%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
 }
+
 
 .column {
     display: flex;
