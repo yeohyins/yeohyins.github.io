@@ -237,6 +237,11 @@ footer {
     width: 30px;
 }
 
+.footerLeft {
+    height: 60px;
+    width: 60px;
+}
+
 /* Responsive Design for Mobile */
 @media screen and (max-width: 800px) {
 
@@ -366,6 +371,11 @@ footer {
     .footerSocial {
         height: 25px;
         width: 25px;
+    }
+
+    .footerLeft {
+        height: 35px;
+        width: 35px;
     }
 
     .url {
