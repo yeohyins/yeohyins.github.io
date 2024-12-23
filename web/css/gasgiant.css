@@ -1,13 +1,20 @@
 section {
     color: white;
-    background-image: url(../img/gasgiantbackground.png);
+    background-image: url(../img/gasgiantbackground.jpg);
     background-repeat: no-repeat;
     background-position: top right;
-    background-size: 60%;
+    background-size: 50%;
+    margin: 0%;
 }
 
 .container {
-    margin-top: 25%;
+    padding: 0% 10%;
+    padding-top: 20%;
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 5%;
 }
 
 h3 {
@@ -16,7 +23,6 @@ h3 {
 
 h1 {
     position: relative;
-    padding-bottom: 50px;
     text-align: left;
     text-shadow: 5px 2px 4px black;
 }
@@ -25,7 +31,7 @@ h1 {
     display: flex;
     position: relative;
     text-align: justify;
-    width: 50%;
+    width: 100%;
     gap: 20px;
     flex-direction: column;
 }
@@ -53,32 +59,44 @@ h1 {
 }
 
 /* Responsive Design for Mobile */
-@media screen and (max-width: 900px) {
-    section {
-        background-size: 120%;
-    }
-
-    h1 {
-        font-size: 24px;
-    }
-
+@media screen and (max-width: 1220px) {
     .container {
-        margin-top: 70%;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
     }
 
     .text {
-        width: fit-content;
+        padding-bottom: 10%;
     }
 
     .buttoncolumn {
         display: flex;
-        gap: 50px;
-        flex-direction: column;
+        gap: 0px;
+        width: 100%;
+        height: auto;
         justify-content: center;
+    }
+}
+
+/* Responsive Design for Mobile */
+@media screen and (max-width: 800px) {
+    section {
+        background-size: 120%;
+    }
+
+    .container {
+        padding-top: 70%;
+    }
+
+    .column {
+        height: auto;
+        align-items: center;
+        flex-direction: row;
     }
 
     .planetbutton {
-        width: 100%;
+        width: 300%;
         height: 100%;
     }
 }
