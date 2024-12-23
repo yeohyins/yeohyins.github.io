@@ -70,7 +70,10 @@ p {
     font-size: 20px;
 }
 
-
+b {
+    font-family: "Exo 2", sans-serif;
+    font-size: 20px;
+}
 
 .topBanner {
     display: flex;
@@ -263,6 +266,11 @@ footer {
     p {
         font-size: 13px;
     }
+
+    b {
+        font-size: 13px;
+    }
+
 
     .topBanner {
         height: 200px;
