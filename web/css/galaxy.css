@@ -12,16 +12,8 @@ h2 {
 }
 
 .centerText {
-    display: flex;
     width: 100%;
-    margin-top: 20%;
     margin-bottom: 20%;
-    position: relative;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 20px;
 }
 
 .imageCollection {
@@ -55,21 +47,10 @@ h2 {
     height: 100%;
 }
 
-.column {
-    display: flex;
-    position: relative;
-    flex-direction: row;
-    width: 100%;
-    gap: 40px;
-    padding-bottom: 200px;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .column2 {
     text-align: center;
     margin-bottom: 10%;
-
 }
 
 .textBox {
@@ -86,19 +67,13 @@ h2 {
 }
 
 .leftDiv {
-    display: flex;
-    flex-direction: column;
     width: 100%;
-    gap: 25px
 }
 
 .rightDiv {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 80%;
-    gap: 25px;
 }
 
 @media screen and (max-width: 1300px) {
@@ -107,34 +82,14 @@ h2 {
         display: flex;
         position: relative;
         flex-direction: column;
-        text-align: center;
         justify-content: center;
-        width: 100%;
         gap: 40px;
     }
 
-    .textBox {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .leftDiv {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-        gap: 25px
-    }
-
     .rightDiv {
-        display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: center;
         width: 70%;
-        height: 300px;
-        gap: 25px;
     }
 }
 
