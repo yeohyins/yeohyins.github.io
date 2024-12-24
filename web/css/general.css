@@ -75,10 +75,6 @@ b {
     font-size: 20px;
 }
 
-.hr {
-    border-width: 5%;
-}
-
 .hide-item {
     display: flex;
 }
@@ -362,6 +358,10 @@ footer {
         font-size: 13px;
     }
 
+    .planetbutton {
+        width: 100%;
+        height: 100%;
+    }
 
     .topBanner {
         height: 200px;
