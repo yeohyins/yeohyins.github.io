@@ -157,12 +157,14 @@ b {
     gap: 40px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20%;
     margin-bottom: 20%;
 }
 
 .leftDiv {
     display: flex;
     flex-direction: column;
+    text-align: left;
     width: 50%;
     gap: 25px
 }
@@ -172,6 +174,7 @@ b {
     flex-direction: column;
     align-items: left;
     justify-content: left;
+    text-align: left;
     width: 50%;
     gap: 25px;
 }
@@ -344,6 +347,18 @@ footer {
     width: 50px;
 }
 
+.backtotop {
+    position: fixed;
+    width: 35px;
+    bottom: 110px;
+    right: 42px;
+    cursor: pointer;
+}
+
+.backtotop a {
+    color: white;
+}
+
 /* Responsive Design for Mobile */
 @media screen and (max-width: 800px) {
 
@@ -399,23 +414,6 @@ footer {
 
     a.head {
         font-size: 16px;
-    }
-
-    .foot {
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        gap: 15%;
-        row-gap: 40px;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-
-    .footerMid {
-        display: flex;
-        flex-direction: column;
-        width: 140px;
-        padding: 10px;
     }
 
     .menu {
@@ -482,6 +480,7 @@ footer {
         /* Center vertically in the navigation bar */
         right: 20px;
         transform: translateY(-50%);
+        margin-right: 7%;
         /* Adjust positioning to exact center */
     }
 
@@ -490,7 +489,20 @@ footer {
     }
 
     .foot {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         text-align: center;
+        gap: 50px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .footerMid {
+        display: flex;
+        flex-direction: column;
+        width: 140px;
+        padding: 10px;
     }
 
     .footerSocial {
@@ -516,10 +528,10 @@ footer {
     }
 
     .hide-item {
-        display: flex;
+        display: none;
     }
 
     .show-item {
-        display: none;
+        display: flex;
     }
 }
