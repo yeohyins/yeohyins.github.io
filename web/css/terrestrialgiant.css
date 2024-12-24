@@ -27,6 +27,7 @@ h1 {
     text-align: justify;
     gap: 20px;
     flex-direction: column;
+    text-shadow: 5px 2px 4px black;
 }
 
 .buttoncolumn {
