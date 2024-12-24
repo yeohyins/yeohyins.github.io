@@ -1,10 +1,6 @@
 section {
-    color: white;
     background-image: url(../img/gasgiants-background.jpg);
-    background-repeat: no-repeat;
-    background-position: top right;
     background-size: 60%;
-    margin: 0%;
 }
 
 .container {
@@ -44,20 +40,6 @@ h1 {
     align-items: right;
 }
 
-.column {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
-
-.planetbutton {
-    display: flex;
-    justify-content: center;
-    padding: 5px;
-    padding-bottom: 25px;
-}
-
 /* Responsive Design for Mobile */
 @media screen and (max-width: 1220px) {
     .container {
@@ -93,10 +75,5 @@ h1 {
         height: auto;
         align-items: center;
         flex-direction: row;
-    }
-
-    .planetbutton {
-        width: 300%;
-        height: 100%;
     }
 }

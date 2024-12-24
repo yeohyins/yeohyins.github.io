@@ -1,10 +1,6 @@
 section {
-    color: white;
     background-image: url(../img/terrestrial-background.png);
-    background-repeat: no-repeat;
-    background-position: top right;
     background-size: 60%;
-    margin: 0%;
 }
 
 
@@ -41,20 +37,6 @@ h1 {
     flex-wrap: nowrap;
 }
 
-.column {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
-
-.planetbutton {
-    display: flex;
-    justify-content: center;
-    padding: 5px;
-    padding-bottom: 25px;
-}
-
 /* Responsive Design for Mobile */
 @media screen and (max-width: 800px) {
     section {
@@ -85,10 +67,5 @@ h1 {
         height: auto;
         flex: 1 1 calc(50% - 20px);
         max-width: calc(50% - 20px);
-    }
-
-    .planetbutton {
-        width: 100%;
-        height: 100%;
     }
 }

@@ -1,9 +1,6 @@
 section {
     background-image: url(../img/planet-background.jpeg);
-    background-repeat: no-repeat;
-    background-position: top right;
     background-size: 48%;
-    margin: 0%;
 }
 
 .all {
@@ -45,13 +42,6 @@ h1 {
     gap: 15px;
     margin-bottom: 2%;
     margin-top: 10px;
-}
-
-.column {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
 }
 
 .box {
