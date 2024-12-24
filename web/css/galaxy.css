@@ -7,6 +7,10 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    width: 70%;
+}
+
 .centerText {
     display: flex;
     width: 100%;
@@ -63,10 +67,10 @@ h1 {
 }
 
 .column2 {
-    margin-bottom: 5%;
+    margin-bottom: 10%;
 }
 
-.textBox{
+.textBox {
     display: flex;
     position: relative;
     flex-direction: row;
@@ -100,11 +104,10 @@ h1 {
         position: relative;
         flex-direction: column;
         width: 100%;
-        padding-bottom: 100px;
         gap: 40px;
     }
 
-    .textBox{
+    .textBox {
         display: flex;
         flex-direction: column;
     }
@@ -152,7 +155,6 @@ h1 {
         width: 100%;
         gap: 40px;
         padding-bottom: 200px;
-
     }
 
     .leftDiv {
@@ -197,8 +199,13 @@ h1 {
         position: relative;
         flex-direction: column;
         width: 100%;
-        padding-bottom: 100px;
-        gap: 40px;
+        gap: 20px;
+        margin-bottom: 20%;
+    }
+
+    .textBox {
+        gap: 50px;
+        margin-top: 0%;
     }
 
     .leftDiv {
@@ -215,7 +222,9 @@ h1 {
         align-items: center;
         justify-content: center;
         width: 100%;
-        height: 300px;
+        height: auto;
         gap: 25px;
+        padding-left: 10%;
+        padding-right: 10%;
     }
 }
