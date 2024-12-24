@@ -2,6 +2,8 @@ body {
     margin: 0;
     font-family: 'Exo 2', sans-serif;
     color: white;
+    background-color: #000;
+    /* Ensures consistency in background color */
 }
 
 .contact-container {
@@ -19,25 +21,19 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0;
-    padding: 0;
 }
 
 .background-image h1 {
-    font-size: 3rem;
     color: white;
-    text-transform: uppercase;
-    letter-spacing: 2px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    font-family: 'Orbitron', sans-serif;
 }
 
 .contact-form-container {
     background-color: #000;
+    /* Consistent with body background */
     width: 100%;
     padding: 2rem;
     text-align: center;
-    position: relative;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -47,7 +43,8 @@ body {
 
 .contact-form {
     max-width: 600px;
-    margin: 0 auto;
+    margin: auto;
+    /* Centering the form */
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -67,7 +64,6 @@ body {
 
 .contact-form textarea {
     resize: none;
-    font-family: "Exo 2", sans-serif;
     height: 150px;
 }
 
@@ -106,28 +102,23 @@ body {
     height: 30px;
 }
 
-/* Bottom texture */
-.bottom-texture {
-    width: 100%;
-    height: 200px;
-    /* Adjust height as needed */
-    background: url('../../images/texture.png') no-repeat center bottom/cover;
-    position: relative;
-}
-
 @media (max-width: 768px) {
     .background-image h1 {
         font-size: 2rem;
+        /* Adjusted for better visibility on smaller screens */
     }
 
     .contact-form-container {
         padding: 1rem;
+        /* Reduced padding for smaller screens */
     }
 
     .contact-form input,
     .contact-form textarea {
         padding: 0.8rem;
+        /* Smaller padding for inputs and textarea */
         font-size: 0.9rem;
+        /* Smaller font size for better fit */
     }
 
     .contact-form button {
@@ -137,6 +128,7 @@ body {
 
     .social-icons img {
         width: 25px;
+        /* Smaller social icons */
         height: 25px;
     }
 }
