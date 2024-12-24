@@ -12,7 +12,12 @@ section {
     color: white;
     align-items: center;
     margin: 10%;
+    background-repeat: no-repeat;
+    background-position: top right;
 }
+
+
+
 
 body {
     font-family: "Exo 2", sans-serif;
@@ -75,6 +80,22 @@ b {
     font-size: 20px;
 }
 
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.planetbutton {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    padding-bottom: 25px;
+}
+
+
 .hide-item {
     display: flex;
 }
@@ -108,7 +129,6 @@ b {
     width: 100%;
     gap: 40px;
     margin-top: 0%;
-    margin-bottom: 20%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -358,8 +378,9 @@ footer {
         font-size: 13px;
     }
 
+
     .planetbutton {
-        width: 100%;
+        width: 300%;
         height: 100%;
     }
 

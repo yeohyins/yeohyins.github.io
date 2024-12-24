@@ -1,7 +1,7 @@
 .container {
     display: flex;
     gap: 3%;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
     justify-content: center;
     justify-content: space-between;
     align-items: center;
@@ -10,6 +10,13 @@
 
 h1 {
     padding-bottom: 50px;
+    text-align: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
 }
 
