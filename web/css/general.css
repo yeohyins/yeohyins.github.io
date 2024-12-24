@@ -75,6 +75,14 @@ b {
     font-size: 20px;
 }
 
+.hide-item {
+    display: flex;
+}
+
+.show-item {
+    display: none;
+}
+
 .topBanner {
     display: flex;
     position: relative;
@@ -104,17 +112,20 @@ b {
     border-bottom: 1px solid #333;
     height: 75px;
     z-index: 1;
+    top: 0;
 }
 
 .logo {
-    width: 50px;
     height: 40px;
+    width: 50px;
 }
 
 /* Navigation css*/
 .menu {
     display: flex;
-    gap: 10px;
+    justify-content: right;
+    gap: 6%;
+    width: 100%;
     list-style: none;
     padding: 0px;
     margin: 0px;
@@ -148,13 +159,26 @@ b {
     right: 20px;
 }
 
-.menu-item{
-    padding: 30px;
+.menu-item {
+    padding-top: 30px;
+    padding-bottom: 30px
 }
 
-.menu-item:hover .subMenu {
+.menu-item-withsub {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.menu-item-withsub:hover .subMenu {
     display: block;
 }
+
+.mobile-menu {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
 
 .subMenu {
     margin-top: 25px;
@@ -286,13 +310,13 @@ footer {
         margin-top: auto;
     }
 
-    .logo img {
-        width: 30px;
+    .logo {
+        height: 32px;
+        width: 40px;
     }
 
     a.head {
         font-size: 16px;
-
     }
 
     .foot {
@@ -316,15 +340,13 @@ footer {
         background-color: #242424;
         display: none;
         flex-direction: column;
-        gap: 10px;
+        gap: 0px;
         position: fixed;
         top: 75px;
         right: 0;
         width: 100%;
         text-align: center;
-        z-index: 1000;
-        padding-top: 3%;
-        padding-bottom: 3%;
+        z-index: 100;
     }
 
     .menu-item {
@@ -333,12 +355,27 @@ footer {
         justify-content: center;
         align-items: center;
         text-align: center;
+        padding: 0px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .menu-item-withsub {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0px;
+        padding-top: 5%;
     }
 
     .subMenu {
         display: block;
         position: static;
         width: 100%;
+        margin-top: 5%;
+        padding: 0px;
     }
 
     .subMenu a {
@@ -346,6 +383,7 @@ footer {
     }
 
     .choose {
+        padding: 3%;
         text-align: center;
     }
 
@@ -375,8 +413,8 @@ footer {
     }
 
     .footerLeft {
-        height: 35px;
-        width: 35px;
+        height: 32px;
+        width: 40px;
     }
 
     .url {
@@ -389,5 +427,13 @@ footer {
         justify-content: flex-end;
         margin-left: auto;
         gap: 15px;
+    }
+
+    .hide-item {
+        display: flex;
+    }
+
+    .show-item {
+        display: none;
     }
 }
