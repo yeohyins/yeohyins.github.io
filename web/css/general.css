@@ -75,6 +75,10 @@ b {
     font-size: 20px;
 }
 
+.hr {
+    border-width: 5%;
+}
+
 .hide-item {
     display: flex;
 }
@@ -83,6 +87,11 @@ b {
     display: none;
 }
 
+.curved {
+    border-radius: 30px;
+}
+
+/*Mission / Myths / Galaxy*/
 .topBanner {
     display: flex;
     position: relative;
@@ -92,12 +101,64 @@ b {
     justify-content: center;
     margin-top: auto;
     color: white;
+    padding-bottom: 0px;
+    padding-top: 0px;
 }
 
-.curved {
-    border-radius: 30px;
+.column {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    width: 100%;
+    gap: 40px;
+    margin-top: 0%;
+    margin-bottom: 20%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+.centerText {
+    display: flex;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    margin-top: 20%;
+}
+
+.midColumn {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20%;
+}
+
+.leftDiv {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 25px
+}
+
+.rightDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    width: 50%;
+    gap: 25px;
+}
 
 /* Navigation */
 .navbar {
