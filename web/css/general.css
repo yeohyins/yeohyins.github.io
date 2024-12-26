@@ -16,9 +16,6 @@ section {
     background-position: top right;
 }
 
-
-
-
 body {
     font-family: "Exo 2", sans-serif;
     background-color: #000000;
@@ -79,7 +76,6 @@ b {
     font-family: "Exo 2", sans-serif;
     font-size: 20px;
 }
-
 
 .column {
     display: flex;
@@ -179,6 +175,21 @@ b {
     gap: 25px;
 }
 
+.sticky {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+}
+
+.first {
+    height: 50px;
+    background: red;
+    position: sticky;
+    top: 0;
+}
+
 /* Navigation */
 .navbar {
     display: flex;
@@ -200,7 +211,6 @@ b {
     width: 50px;
 }
 
-/* Navigation css*/
 .menu {
     display: flex;
     justify-content: right;
@@ -259,7 +269,6 @@ b {
     cursor: pointer;
 }
 
-
 .subMenu {
     margin-top: 25px;
     background-color: #363636;
@@ -285,6 +294,42 @@ b {
 .choose:hover {
     background-color: #525252;
 }
+
+
+/* Breadcumb navigation*/
+ul.breadcrumb {
+    position: sticky;
+    background-color: #000000;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    list-style: none;
+    top: 75px;
+    font-size: 16px;
+}
+
+ul.breadcrumb li {
+    display: inline;
+    color: #ffffff;
+
+}
+
+ul.breadcrumb li a {
+    color: rgb(140, 140, 140);
+}
+
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: rgb(140, 140, 140);
+    content: "/\00a0";
+}
+
+ul.breadcrumb a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
 
 /* Footer css */
 footer {
