@@ -183,12 +183,6 @@ b {
     top: 0;
 }
 
-.first {
-    height: 50px;
-    background: red;
-    position: sticky;
-    top: 0;
-}
 
 /* Navigation */
 .navbar {
@@ -295,13 +289,12 @@ b {
     background-color: #525252;
 }
 
-
 /* Breadcumb navigation*/
 ul.breadcrumb {
     position: sticky;
     background-color: #000000;
-    padding-left: 10%;
-    padding-right: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
     padding-top: 20px;
     padding-bottom: 20px;
     list-style: none;
@@ -328,6 +321,31 @@ ul.breadcrumb li+li:before {
 ul.breadcrumb a:hover {
     color: #ffffff;
     text-decoration: underline;
+}
+
+.backButton {
+    display: none;
+    position: sticky;
+    justify-content: left;
+    background-color: #000000;
+}
+
+.backBox {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 90px;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.backImg {
+    width: auto;
+    height: 15px;
+    rotate: 270deg;
 }
 
 
@@ -438,6 +456,13 @@ footer {
         font-size: 13px;
     }
 
+    .breadcrumb {
+        display: none;
+    }
+
+    .backButton {
+        display: flex;
+    }
 
     .planetbutton {
         width: 300%;
