@@ -1,13 +1,12 @@
 section {
-    background-image: url(../img/icegiants-background.jpg);
-    background-size: 60%;
+    background-image: url(../img/mercury-background.png);
+    background-size: 55%;
     margin: 0%;
-    justify-content: bottom;
-    align-items: center;
+    background-position: bottom center;
 }
 
 .container {
-    padding: 0% 5%;
+    padding: 0% 7%;
     padding-top: 8%;
     padding-bottom: 5%;
     display: flex;
@@ -17,21 +16,20 @@ section {
 
 h3 {
     position: relative;
-    text-shadow: 5px 2px 4px black;
 }
 
 h1 {
     padding-top: 5%;
     position: relative;
     text-align: center;
-    text-shadow: 5px 2px 4px black;
+    opacity: 50%;
 }
 
 .text {
     display: flex;
     position: relative;
     text-align: justify;
-    width: 30%;
+    width: 35%;
     gap: 40px;
     flex-direction: column;
     text-shadow: 5px 2px 4px black;
@@ -39,27 +37,34 @@ h1 {
 
 .elementcolumn {
     display: flex;
-    gap: 30px;
+    gap: 70px;
     width: 30%;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: right;
+}
+
+.column {
+    justify-content: right;
+}
+
+.smallbox {
+    width: 55%;
 }
 
 .rightsmallbox {
     display: flex;
-    width: 40%;
+    width: 55%;
     text-align: justify;
-    justify-content: flex-end;
-    align-items: right;
+    justify-content: right;
+    align-content: flex-end;
 }
 
 .next {
+    position: relative;
     display: flex;
     width: 100%;
-    padding-left: 10%;
-    padding-right: 10%;
-    margin-bottom: 5%;
+    padding-right: 6%;
+    padding-bottom: 5%;
     justify-content: flex-end;
     align-items: right;
 }
