@@ -293,8 +293,7 @@ b {
 ul.breadcrumb {
     position: sticky;
     background-color: #000000;
-    margin-left: 10%;
-    margin-right: 10%;
+    padding-left: 10%;
     padding-top: 20px;
     padding-bottom: 20px;
     list-style: none;
