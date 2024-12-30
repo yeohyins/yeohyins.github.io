@@ -1,0 +1,106 @@
+section {
+    background-image: url(../img/icegiants-background.jpg);
+    background-size: 60%;
+    margin: 0%;
+    justify-content: bottom;
+    align-items: center;
+}
+
+.container {
+    padding: 0% 5%;
+    padding-top: 8%;
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+h3 {
+    position: relative;
+    text-shadow: 5px 2px 4px black;
+}
+
+h1 {
+    padding-top: 5%;
+    position: relative;
+    text-align: center;
+    text-shadow: 5px 2px 4px black;
+}
+
+.text {
+    display: flex;
+    position: relative;
+    text-align: justify;
+    width: 30%;
+    gap: 40px;
+    flex-direction: column;
+    text-shadow: 5px 2px 4px black;
+}
+
+.elementcolumn {
+    display: flex;
+    gap: 30px;
+    width: 30%;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: right;
+}
+
+.rightsmallbox {
+    display: flex;
+    width: 40%;
+    text-align: justify;
+    justify-content: flex-end;
+    align-items: right;
+}
+
+.next {
+    display: flex;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 5%;
+    justify-content: flex-end;
+    align-items: right;
+}
+
+/* Responsive Design for Mobile */
+@media screen and (max-width: 1220px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text {
+        padding-bottom: 10%;
+    }
+
+    .elementcolumn {
+        gap: 0px;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        order: 2;
+    }
+
+    .text {
+        order: 1;
+    }
+}
+
+/* Responsive Design for Mobile */
+@media screen and (max-width: 800px) {
+    section {
+        background-size: 120%;
+    }
+
+    .container {
+        padding-top: 70%;
+    }
+
+    .column {
+        height: auto;
+        align-items: center;
+        flex-direction: row;
+    }
+}
