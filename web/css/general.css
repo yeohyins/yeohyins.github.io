@@ -70,7 +70,7 @@ h3 {
 h4 {
     color: #fff;
     font-family: "Exo 2", sans-serif;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 p {
@@ -449,6 +449,12 @@ footer {
     }
 
     h3 {
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    h4 {
+        color: #fff;
         font-weight: bold;
         font-size: 16px;
     }

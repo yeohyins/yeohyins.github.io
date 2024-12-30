@@ -43,6 +43,14 @@ h1 {
     align-items: right;
 }
 
+.next {
+    display: flex;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 5%;
+}
+
 /* Responsive Design for Mobile */
 @media screen and (max-width: 1220px) {
     .container {
