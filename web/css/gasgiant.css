@@ -41,6 +41,27 @@ h1 {
     align-items: right;
 }
 
+.next {
+    display: flex;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 5%;
+}
+
+.left {
+    display: flex;
+    width: 50%;
+    align-items: left;
+}
+
+.right {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+    align-items: right;
+}
+
 /* Responsive Design for Mobile */
 @media screen and (max-width: 1220px) {
     .container {
