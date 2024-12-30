@@ -38,6 +38,16 @@ h1 {
     flex-wrap: nowrap;
 }
 
+.next {
+    display: flex;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 5%;
+    justify-content: flex-end;
+    align-items: right;
+}
+
 /* Responsive Design for Mobile */
 @media screen and (max-width: 800px) {
     section {
