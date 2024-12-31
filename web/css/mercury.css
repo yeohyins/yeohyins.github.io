@@ -108,4 +108,8 @@ h1 {
         align-items: center;
         flex-direction: row;
     }
+
+    .left {
+        text-align: center;
+    }
 }
