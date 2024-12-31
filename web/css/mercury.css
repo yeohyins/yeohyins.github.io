@@ -1,6 +1,6 @@
 section {
     background-image: url(../img/mercury-background.png);
-    background-size: 55%;
+    background-size: 52%;
     margin: 0%;
     background-position: bottom center;
 }
@@ -20,16 +20,14 @@ h3 {
 
 h1 {
     padding-top: 5%;
-    position: relative;
     text-align: center;
     opacity: 50%;
 }
 
 .text {
     display: flex;
-    position: relative;
     text-align: justify;
-    width: 35%;
+    width: 32%;
     gap: 40px;
     flex-direction: column;
     text-shadow: 5px 2px 4px black;
@@ -45,10 +43,11 @@ h1 {
 
 .column {
     justify-content: right;
+    padding-bottom: 35px;
 }
 
 .smallbox {
-    width: 55%;
+    width: 60%;
 }
 
 .rightsmallbox {
@@ -71,13 +70,29 @@ h1 {
 
 /* Responsive Design for Mobile */
 @media screen and (max-width: 1220px) {
+    section {
+        background-image: none;
+    }
+
     .container {
         flex-direction: column;
         align-items: center;
+        background-image: url(../img/mercury-image.png);
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position: top center;
     }
 
     .text {
+        padding-top: 70%;
         padding-bottom: 10%;
+        align-items: center;
+        text-align: center;
+        width: 80%;
+    }
+
+    .smallbox {
+        width: 110%;
     }
 
     .elementcolumn {
@@ -85,31 +100,41 @@ h1 {
         width: 100%;
         height: auto;
         justify-content: center;
+        align-items: center;
+    }
+
+    .column {
+        flex-direction: column;
+        display: flex;
+        width: auto;
+    }
+
+    .elemen {
         order: 2;
     }
 
-    .text {
+    h1 {
+        align-items: center;
+        text-align: center;
+        padding-bottom: 5%;
+    }
+
+    .rightsmallbox {
+        width: 90%;
+        padding-left: 6%;
+        align-items: center;
+        text-align: center;
         order: 1;
     }
 }
 
 /* Responsive Design for Mobile */
 @media screen and (max-width: 800px) {
-    section {
-        background-size: 120%;
+    .title {
+        padding-top: 5%;
     }
 
-    .container {
-        padding-top: 70%;
-    }
-
-    .column {
-        height: auto;
-        align-items: center;
-        flex-direction: row;
-    }
-
-    .left {
-        text-align: center;
+    h1 {
+        font-size: 24px;
     }
 }
