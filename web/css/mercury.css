@@ -6,7 +6,7 @@ section {
     background-image: url(../img/mercury-background.png);
     background-size: 52%;
     background-position: bottom center;
-    transition: background-image 0.4s ease;
+    transition: background-image 1s ease-in-out;
 }
 
 .dot {
