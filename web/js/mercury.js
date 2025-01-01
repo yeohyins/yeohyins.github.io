@@ -1,0 +1,1 @@
+document.getElementById('rotating-bg').style.animationDuration = '5s';

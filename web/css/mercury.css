@@ -5,6 +5,10 @@ section {
     background-position: bottom center;
 }
 
+.dot {
+    display: none;
+}
+
 .container {
     padding: 0% 7%;
     padding-top: 8%;
@@ -74,6 +78,11 @@ h1 {
         background-image: none;
     }
 
+    .dot {
+        padding-top: 50%;
+        display: inline-block;
+    }
+
     .container {
         flex-direction: column;
         align-items: center;
@@ -84,7 +93,7 @@ h1 {
     }
 
     .text {
-        padding-top: 70%;
+        padding-top: 5%;
         padding-bottom: 10%;
         align-items: center;
         text-align: center;
@@ -101,6 +110,10 @@ h1 {
         height: auto;
         justify-content: center;
         align-items: center;
+    }
+
+    .elementbox {
+        order: 2;
     }
 
     .column {
@@ -121,7 +134,7 @@ h1 {
 
     .rightsmallbox {
         width: 90%;
-        padding-left: 6%;
+        padding-left: 8%;
         align-items: center;
         text-align: center;
         order: 1;
