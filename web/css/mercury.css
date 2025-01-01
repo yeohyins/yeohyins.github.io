@@ -1,8 +1,12 @@
 section {
+    margin: 0%;
+}
+
+#background-section {
     background-image: url(../img/mercury-background.png);
     background-size: 52%;
-    margin: 0%;
     background-position: bottom center;
+    transition: background-image 0.4s ease;
 }
 
 .dot {
@@ -74,7 +78,7 @@ h1 {
 
 /* Responsive Design for Mobile */
 @media screen and (max-width: 1220px) {
-    section {
+    #background-section {
         background-image: none;
     }
 
