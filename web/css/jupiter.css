@@ -1,0 +1,157 @@
+section {
+    margin: 0%;
+}
+
+#background-section {
+    background-image: url(../img/jupiter-background.png);
+    background-size: 52%;
+    background-position: bottom center;
+    transition: background-image 1s ease-in-out;
+}
+
+.dot {
+    display: none;
+}
+
+.container {
+    padding: 0% 7%;
+    padding-top: 8%;
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+h3 {
+    position: relative;
+}
+
+h1 {
+    padding-top: 5%;
+    text-align: center;
+    opacity: 50%;
+}
+
+.text {
+    display: flex;
+    text-align: justify;
+    width: 32%;
+    gap: 40px;
+    flex-direction: column;
+    text-shadow: 5px 2px 4px black;
+}
+
+.elementcolumn {
+    display: flex;
+    gap: 70px;
+    width: 30%;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.column {
+    justify-content: right;
+    padding-bottom: 35px;
+}
+
+.smallbox {
+    width: 60%;
+}
+
+.rightsmallbox {
+    display: flex;
+    width: 55%;
+    text-align: justify;
+    justify-content: right;
+    align-content: flex-end;
+}
+
+.next {
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding-right: 6%;
+    padding-bottom: 5%;
+    justify-content: flex-end;
+    align-items: right;
+}
+
+/* Responsive Design for Mobile */
+@media screen and (max-width: 1220px) {
+    #background-section {
+        background-image: none;
+    }
+
+    .dot {
+        padding-top: 50%;
+        display: inline-block;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        background-image: url(../img/mercury-image.png);
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position: top center;
+    }
+
+    .text {
+        padding-top: 5%;
+        padding-bottom: 10%;
+        align-items: center;
+        text-align: center;
+        width: 80%;
+    }
+
+    .smallbox {
+        width: 110%;
+    }
+
+    .elementcolumn {
+        gap: 0px;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .elementbox {
+        order: 2;
+    }
+
+    .column {
+        flex-direction: column;
+        display: flex;
+        width: auto;
+    }
+
+    .elemen {
+        order: 2;
+    }
+
+    h1 {
+        align-items: center;
+        text-align: center;
+        padding-bottom: 5%;
+    }
+
+    .rightsmallbox {
+        width: 90%;
+        padding-left: 8%;
+        align-items: center;
+        text-align: center;
+        order: 1;
+    }
+}
+
+/* Responsive Design for Mobile */
+@media screen and (max-width: 800px) {
+    .title {
+        padding-top: 5%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
