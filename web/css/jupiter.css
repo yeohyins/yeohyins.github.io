@@ -90,7 +90,7 @@ h1 {
     .container {
         flex-direction: column;
         align-items: center;
-        background-image: url(../img/mercury-image.png);
+        background-image: url(../img/jupiter-image.png);
         background-repeat: no-repeat;
         background-size: 50%;
         background-position: top center;
