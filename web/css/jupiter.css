@@ -35,7 +35,7 @@ h1 {
 .text {
     display: flex;
     text-align: justify;
-    width: 32%;
+    width: 30%;
     gap: 40px;
     flex-direction: column;
     text-shadow: 5px 2px 4px black;
