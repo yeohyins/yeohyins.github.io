@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Array of background images to switch between
     const images = [
-        'img/mercury-background.png',
-        'img/mercury-internal.png'
+        'img/jupiter-background.png',
+        'img/jupiter-internal.png'
     ];
 
     let currentImageIndex = 0;  // Track the current image
@@ -13,10 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
     function changeBackgroundImage() {
         currentImageIndex = (currentImageIndex + 1) % images.length;  // Loop through the images array
         section.style.backgroundImage = `url('${images[currentImageIndex]}')`;
-
-        if (window.innerWidth <= 1220) { // Adjust this value to match your breakpoint
-            section.style.backgroundImage = 'none';
-        }
     }
 
     // Change background image every 3 seconds
