@@ -11,35 +11,55 @@
 </head>
 
 <body>
-    <header class="navbar">
-        <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo"></a>
-        <input type="checkbox" id="menu-toggle" class="menu-toggle">
-        <label for="menu-toggle" class="mobile-menu">&#9776;</label>
-        <div class="menu">
-            <div class="menu-item-withsub">
-                <a href="space.html">Space</a>
-                <div class="subMenu">
-                    <a href="galaxy.html" class="choose">Galaxy</a>
-                    <a href="profile.html" class="choose">Profile</a>
-                    <a href="technology.html" class="choose">Technology</a>
+    <!--Navigation-->
+    <div class="sticky">
+        <header class="navbar">
+            <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo"></a>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="mobile-menu">&#9776;</label>
+            <div class="menu">
+                <div class="menu-item-withsub">
+                    <a href="space.html">Space</a>
+                    <div class="subMenu">
+                        <a href="galaxy.html" class="choose">Galaxy</a>
+                        <a href="launch.html" class="choose">Launch</a>
+                        <a href="mission.html" class="choose">Mission</a>
+                        <a href="technology.html" class="choose">Technology</a>
+                    </div>
+                </div>
+
+                <div class="menu-item-withsub">
+                    <a href="planet.html">Planets</a>
+                    <div class="subMenu">
+                        <a href="terrestrialgiant.html" class="choose">Terrestrial Giant</a>
+                        <a href="gasgiant.html" class="choose">Gas Giant</a>
+                        <a href="iceGiant.html" class="choose">Ice Giant</a>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <a href="myths.html">Myths</a>
+                </div>
+
+                <div class="menu-item">
+                    <a href="contact.html">Contact Us</a>
                 </div>
             </div>
-            <div class="menu-item-withsub">
-                <a href="planet.html">Planets</a>
-                <div class="subMenu">
-                    <a href="terrestrialgiant.html" class="choose">Terrestrial Giant</a>
-                    <a href="gasgiant.html" class="choose">Gas Giant</a>
-                    <a href="iceGiant.html" class="choose">Ice Giant</a>
-                </div>
-            </div>
-            <div class="menu-item">
-                <a href="myths.html">Myths</a>
-            </div>
-            <div class="menu-item">
-                <a href="contact.html">Contact Us</a>
-            </div>
+        </header>
+
+        <ul class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="space.html">Space</a></li>
+            <li>Technology</li>
+        </ul>
+
+        <div class="backButton">
+            <a href="space.html" class="backBox">
+                <img src="img/backtotop.png" class="backImg" alt="back button">
+                <p>Back</p>
+            </a>
         </div>
-    </header>
+    </div>
 
     <!-- Hero Section -->
     <header class="hero">
@@ -56,7 +76,8 @@
                 <h2>Rockets & Launch Vehicles</h2>
                 <p>
                     Modern rockets, like SpaceX's Falcon 9 and NASA's Space Launch System (SLS), are designed to
-                    transport payloads, satellites, and astronauts into orbit and beyond. These rockets utilize advanced
+                    transport payloads, satellites, and astronauts into orbit and beyond. These rockets utilize
+                    advanced
                     propulsion systems and, in some cases, are reusable, significantly reducing costs.
                 </p>
             </div>
@@ -71,7 +92,8 @@
     <!-- Text Content Below Background -->
     <div class="text-below">
         <p>
-            Satellites are vital for Earth observation, weather forecasting, GPS navigation, and global communications.
+            Satellites are vital for Earth observation, weather forecasting, GPS navigation, and global
+            communications.
             They utilize high-speed communication systems to relay data back to Earth, enabling real-time monitoring
             of space and terrestrial activities.
         </p>
@@ -85,7 +107,8 @@
             <div class="text">
                 <h2>Space Telescope</h2>
                 <p>
-                    Space telescopes like the Hubble Space Telescope and the James Webb Space Telescope (JWST) allow us
+                    Space telescopes like the Hubble Space Telescope and the James Webb Space Telescope (JWST) allow
+                    us
                     to observe distant stars, galaxies, and exoplanets. These telescopes are equipped with powerful
                     optics and infrared sensors that can capture high-resolution images and analyze cosmic phenomena
                     beyond the visible spectrum.
@@ -104,21 +127,23 @@
                 <h2>Space Suits & EVA Technologies</h2>
                 <p>
                     Space suits are advanced wearable technology that protect astronauts during extravehicular
-                    activities (EVA). These suits provide life support, radiation shielding, and mobility in the vacuum
+                    activities (EVA). These suits provide life support, radiation shielding, and mobility in the
+                    vacuum
                     of space.
                 </p>
             </div>
         </div>
     </section>
 
+    <!--Footer-->
     <footer>
         <div class="foot">
             <div class="footerMid">
                 <div class="footerText">
                     <p><a href="space.html" class="head">Space</a></p>
-                    <p><a href="terrestrialgiant.html" id="terrestrial">Terrestrial Giants</a></p>
-                    <p><a href="gasgiant.html" id="gasGiant">Gas Giant</a></p>
-                    <p><a href="icegiant.html" id="iceGiant">Ice Giants</a></p>
+                    <p><a href="terrestrialgiant.html">Terrestrial Giants</a></p>
+                    <p><a href="gasgiant.html">Gas Giant</a></p>
+                    <p><a href="icegiant.html">Ice Giants</a></p>
                 </div>
             </div>
 
@@ -126,17 +151,18 @@
                 <div class="footerText">
                     <p><a href="planet.html" class="head">Planets</a></p>
                     <p><a href="galaxy.html">Galaxy</a></p>
-                    <p><a href="profile.html">Profile</a></p>
+                    <p><a href="launch.html">Launch</a></p>
                     <p><a href="mission.html">Mission</a></p>
-                    <p><a href="technology.html" id="technology">Technology</a></p>
+                    <p><a href="technology.html">Technology</a></p>
                 </div>
+
             </div>
 
             <div class="footerMid">
                 <p><a href="myths.html" class="head">Myths</a></p>
             </div>
 
-            <div the="footerMid">
+            <div class="footerMid">
                 <p><a href="contact.html" class="head">Contact Us</a></p>
             </div>
         </div>
@@ -161,7 +187,6 @@
     <div class="backtotop">
         <a href="#top"><img src="img/backtotop.png" alt="Back to Top"></a>
     </div>
-
 </body>
 
 </html>

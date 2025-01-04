@@ -181,6 +181,10 @@ b {
     gap: 25px;
 }
 
+.hr {
+    border-width: 5%;
+}
+
 .sticky {
     display: flex;
     flex-direction: column;

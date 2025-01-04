@@ -1,0 +1,57 @@
+section {
+    margin-top: 15%;
+}
+
+img {
+    object-fit: cover;
+}
+
+h1 {
+    position: absolute;
+    text-align: center;
+}
+
+h3 {
+    min-height: 100px;
+}
+
+
+.textBox {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    gap: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.column {
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+
+@media screen and (max-width: 800px) {
+
+    section {
+        margin: 15%;
+    }
+
+    h3 {
+        min-height: auto;
+    }
+
+    .column {
+        flex-direction: column;
+        width: 100%;
+        gap: 70px;
+        margin-top: 5%;
+        margin-bottom: 0%;
+    }
+}
