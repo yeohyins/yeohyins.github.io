@@ -2,8 +2,10 @@ section {
     margin-top: 15%;
 }
 
-img {
+.leftDiv img {
     object-fit: cover;
+    max-height: 400px;
+    max-width: 700px;
 }
 
 h1 {
@@ -11,30 +13,49 @@ h1 {
     text-align: center;
 }
 
-h3 {
-    min-height: 100px;
-}
-
-
-.textBox {
-    display: flex;
-    position: relative;
-    flex-direction: row;
-    align-items: center;
-    text-align: left;
+hr{
     width: 100%;
-    gap: 10%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    margin-left: auto;
-    margin-right: auto;
 }
+
+.middle{
+    width: 50%;
+    border-color: rgb(142, 142, 142);
+}
+
 
 .column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 90px;
     flex-direction: column;
-    margin-left: 10%;
-    margin-right: 10%;
     margin-top: 5%;
+}
+
+.textBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    margin-left: 10%;
+    margin-right: 10%; 
+}
+
+.leftDiv {
+    gap: 20px
+}
+
+.rightDiv {
+    gap: 20px;
+}
+
+.titleBox p{
+    color: rgb(142, 142, 142);
+}
+
+@media screen and (max-width: 800px) {
+    
 }
 
 @media screen and (max-width: 800px) {
@@ -47,11 +68,33 @@ h3 {
         min-height: auto;
     }
 
+    hr{
+        width: 100%;
+    }
+
     .column {
         flex-direction: column;
         width: 100%;
         gap: 70px;
         margin-top: 5%;
         margin-bottom: 0%;
+    }
+
+    .textBox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-direction: column;
+        margin-left: 10%;
+        margin-right: 10%; 
+    }
+
+    .leftDiv{
+        width: 70%;
+    }
+
+    .rightDiv{
+        width: 100%;
     }
 }

@@ -124,6 +124,10 @@ b {
     padding-top: 0px;
 }
 
+img.banner{
+    opacity: 65%;
+}
+
 .column {
     display: flex;
     position: relative;
