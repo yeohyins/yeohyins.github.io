@@ -1,5 +1,5 @@
 section {
-    background-image: url(../img/gasgiants-background.jpg);
+    background-image: url(../img/icegiants-background.jpg);
     background-size: 60%;
     margin: 0%;
 }
@@ -16,6 +16,7 @@ section {
 
 h3 {
     position: relative;
+    text-shadow: 5px 2px 4px black;
 }
 
 h1 {
@@ -31,6 +32,7 @@ h1 {
     width: 100%;
     gap: 20px;
     flex-direction: column;
+    text-shadow: 5px 2px 4px black;
 }
 
 .buttoncolumn {
@@ -49,24 +51,10 @@ h1 {
     margin-bottom: 5%;
 }
 
-.left {
-    display: flex;
-    width: 50%;
-    align-items: left;
-}
-
-.right {
-    display: flex;
-    width: 50%;
-    justify-content: flex-end;
-    align-items: right;
-}
-
 /* Responsive Design for Mobile */
 @media screen and (max-width: 1220px) {
     .container {
         flex-direction: column;
-        display: flex;
         align-items: center;
     }
 
@@ -75,11 +63,15 @@ h1 {
     }
 
     .buttoncolumn {
-        display: flex;
         gap: 0px;
         width: 100%;
         height: auto;
         justify-content: center;
+        order: 2;
+    }
+
+    .text {
+        order: 1;
     }
 }
 

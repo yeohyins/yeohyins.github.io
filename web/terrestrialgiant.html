@@ -10,40 +10,47 @@
 
 <body>
     <!--Navigation-->
-    <header class="navbar">
-        <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo"></a>
-        <input type="checkbox" id="menu-toggle" class="menu-toggle">
-        <label for="menu-toggle" class="mobile-menu">&#9776;</label>
-        <div class="menu">
-            <div class="menu-item-withsub">
-                <a href="space.html">Space</a>
-                <div class="subMenu">
-                    <a href="galaxy.html" class="choose">Galaxy</a>
-                    <a href="profile.html" class="choose">Profile</a>
-                    <a href="mission.html" class="choose">Mission</a>
-                    <a href="technology.html" class="choose">Technology</a>
+    <div class="sticky">
+        <header class="navbar">
+            <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo"></a>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="mobile-menu">&#9776;</label>
+            <div class="menu">
+                <div class="menu-item-withsub">
+                    <a href="space.html">Space</a>
+                    <div class="subMenu">
+                        <a href="galaxy.html" class="choose">Galaxy</a>
+                        <a href="launch.html" class="choose">Launch</a>
+                        <a href="mission.html" class="choose">Mission</a>
+                        <a href="technology.html" class="choose">Technology</a>
+                    </div>
+                </div>
+
+                <div class="menu-item-withsub">
+                    <a href="planet.html">Planets</a>
+                    <div class="subMenu">
+                        <a href="terrestrialgiant.html" class="choose">Terrestrial Giant</a>
+                        <a href="gasgiant.html" class="choose">Gas Giant</a>
+                        <a href="iceGiant.html" class="choose">Ice Giant</a>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <a href="myths.html">Myths</a>
+                </div>
+
+                <div class="menu-item">
+                    <a href="contact.html">Contact Us</a>
                 </div>
             </div>
+        </header>
 
-            <div class="menu-item-withsub">
-                <a href="planet.html">Planets</a>
-                <div class="subMenu">
-                    <a href="terrestrialgiant.html" class="choose">Terrestrial Giant</a>
-                    <a href="gasgiant.html" class="choose">Gas Giant</a>
-                    <a href="iceGiant.html" class="choose">Ice Giant</a>
-                </div>
-            </div>
-
-            <div class="menu-item">
-                <a href="myths.html">Myths</a>
-            </div>
-
-            <div class="menu-item">
-                <a href="contact.html">Contact Us</a>
-            </div>
-        </div>
-    </header>
-
+        <ul class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="planet.html">Planet</a></li>
+            <li>Terrestrial Giant</li>
+        </ul>
+    </div>
     <section>
         <div class="container">
             <div>
@@ -57,11 +64,13 @@
                 <p>Terrestrial giants have a much greater mass than Earth (often 5–10 times the mass of Earth or
                     more). This large mass leads to stronger gravity and could affect planetary atmospheres and
                     geology.</p>
-                <b>Habitability Potential</b>
-                <p>Terrestrial giants in the habitable zone of their stars are particularly interesting for
+
+                <p><b>Habitability Potential</b>
+                    <br>Terrestrial giants in the habitable zone of their stars are particularly interesting for
                     exoplanet research, as they might support thick, stable atmospheres and, potentially, liquid
                     water. The size and atmosphere could create environments that sustain life forms adapted to
-                    stronger gravity.</p>
+                    stronger gravity.
+                </p>
                 <p>It made primarily of rock and metal, similar to Earth, Mars, Venus, and Mercury.</p>
             </div>
         </div>
@@ -91,16 +100,22 @@
                 </div>
             </div>
         </div>
+        <div class="next">
+            <a href="gasgiant.html">
+                <h4>GAS GIANT ▷</h4>
+            </a>
+        </div>
     </section>
+
     <!--Footer-->
     <footer>
         <div class="foot">
             <div class="footerMid">
                 <div class="footerText">
                     <p><a href="space.html" class="head">Space</a></p>
-                    <p><a href="terrestrialgiant.html" id="terrestrial">Terrestrial Giants</a></p>
-                    <p><a href="gasgiant.html" id="gasGiant">Gas Giant</a></p>
-                    <p><a href="icegiant.html" id="iceGiant">Ice Giants</a></p>
+                    <p><a href="terrestrialgiant.html">Terrestrial Giants</a></p>
+                    <p><a href="gasgiant.html">Gas Giant</a></p>
+                    <p><a href="icegiant.html">Ice Giants</a></p>
                 </div>
             </div>
 
@@ -108,9 +123,9 @@
                 <div class="footerText">
                     <p><a href="planet.html" class="head">Planets</a></p>
                     <p><a href="galaxy.html">Galaxy</a></p>
-                    <p><a href="profile.html">Profile</a></p>
+                    <p><a href="launch.html">Launch</a></p>
                     <p><a href="mission.html">Mission</a></p>
-                    <p><a href="technology.html" id="technology">Technology</a></p>
+                    <p><a href="technology.html">Technology</a></p>
                 </div>
 
             </div>
