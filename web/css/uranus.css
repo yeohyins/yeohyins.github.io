@@ -3,7 +3,7 @@ section {
 }
 
 #background-section {
-    background-image: url(../img/jupiter-background.png);
+    background-image: url(../img/uranus-background.png);
     background-size: 52%;
     background-position: bottom center;
     transition: background-image 1s ease-in-out;
@@ -43,7 +43,7 @@ h1 {
 
 .elementcolumn {
     display: flex;
-    gap: 70px;
+    gap: 200px;
     width: 30%;
     flex-direction: column;
     justify-content: flex-end;
@@ -90,7 +90,7 @@ h1 {
     .container {
         flex-direction: column;
         align-items: center;
-        background-image: url(../img/jupiter-image.png);
+        background-image: url(../img/uranus-image.png);
         background-repeat: no-repeat;
         background-size: 50%;
         background-position: top center;

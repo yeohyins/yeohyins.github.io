@@ -403,12 +403,17 @@ footer {
 .footerBottom {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .footerRight {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
     margin-left: auto;
     gap: 20px;
 }

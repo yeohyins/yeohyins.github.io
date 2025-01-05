@@ -43,7 +43,7 @@ h1 {
 
 .elementcolumn {
     display: flex;
-    gap: 70px;
+    gap: 150px;
     width: 30%;
     flex-direction: column;
     justify-content: flex-end;

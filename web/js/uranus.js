@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Array of background images to switch between
     const images = [
-        'img/jupiter-background.png',
-        'img/jupiter-internal.png'
+        'img/uranus-background.png',
+        'img/uranus-internal.png'
     ];
 
     let currentImageIndex = 0;  // Track the current image
