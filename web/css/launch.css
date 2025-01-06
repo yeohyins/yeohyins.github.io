@@ -22,6 +22,9 @@ hr{
     border-color: rgb(142, 142, 142);
 }
 
+.centerText{
+    margin-bottom: 10%;
+}
 
 .column {
     display: flex;
@@ -31,6 +34,7 @@ hr{
     gap: 90px;
     flex-direction: column;
     margin-top: 5%;
+    margin-bottom: 10%;
 }
 
 .textBox{
@@ -77,7 +81,7 @@ hr{
         width: 100%;
         gap: 70px;
         margin-top: 5%;
-        margin-bottom: 0%;
+        margin-bottom: 15%;
     }
 
     .textBox{
@@ -91,7 +95,7 @@ hr{
     }
 
     .leftDiv{
-        width: 70%;
+        width: 90%;
     }
 
     .rightDiv{
