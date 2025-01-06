@@ -7,14 +7,11 @@ h1 {
     text-align: center;
 }
 
-h2 {
+.specialH2{
     width: 100%;
+    padding-bottom: 50px;
 }
 
-.centerText {
-    width: 100%;
-    margin-bottom: 20%;
-}
 
 .imageCollection {
     display: flex;
@@ -45,6 +42,7 @@ h2 {
     align-items: center;
     width: 100%;
     height: 100%;
+    margin-top: 20%;
 }
 
 
@@ -70,7 +68,7 @@ h2 {
 }
 
 .leftDiv {
-    width: 90%;
+    width: 60%;
 }
 
 .rightDiv {
@@ -79,11 +77,16 @@ h2 {
     height: 100%;
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1390px) {
 
     .column2 {
         flex-direction: column;
         gap: 40px;
+    }
+
+    .leftDiv{
+        text-align: justify;
+        width: 90%;
     }
 
     .rightDiv {
@@ -91,7 +94,7 @@ h2 {
     }
 
     .textBox {
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: 50px;
         margin-top: 0%;
     }
@@ -102,6 +105,10 @@ h2 {
 
     section {
         margin-bottom: 20%;
+    }
+
+    .specialH2{
+        padding-bottom: 5px;
     }
 
     img#apollo {
