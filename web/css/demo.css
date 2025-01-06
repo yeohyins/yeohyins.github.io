@@ -64,10 +64,29 @@ h2 {
     margin-bottom: 30px;
 }
 
+.satellites-section {
+    background: url('../../images/SatellitesandCommunicationSystemsbg.png') no-repeat center center;
+    background-size: 100% 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    padding: 0;
+    margin: 0 auto;
+}
 
 
-
-
+.text-below {
+    text-align: center;
+    margin: 60px auto;
+    padding: 20px;
+    max-width: 800px;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #fff;
+}
 
 
 @media screen and (max-width: 1500px) {

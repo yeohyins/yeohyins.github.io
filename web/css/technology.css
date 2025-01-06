@@ -28,11 +28,6 @@ body {
     background-size: cover;
 }
 
-.hero h1 {
-    font-size: 4rem;
-    text-transform: uppercase;
-    letter-spacing: 8px;
-}
 
 .content-section {
     display: flex;
@@ -76,10 +71,6 @@ body {
     text-align: left;
 }
 
-.text h2 {
-    margin-bottom: 20px;
-    font-size: 2.5rem;
-}
 
 .text p {
     margin-top: 20px;
@@ -99,11 +90,6 @@ body {
     margin: 0 auto;
 }
 
-.satellites-section h2 {
-    font-size: 3rem;
-    text-transform: uppercase;
-    color: #fff;
-}
 
 .text-below {
     text-align: center;
@@ -136,9 +122,6 @@ body {
         height: 300px;
     }
 
-    .satellites-section h2 {
-        font-size: 2rem;
-    }
 }
 
 @media (max-width: 768px) {
