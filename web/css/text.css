@@ -124,32 +124,41 @@ b {
     display: flex;
     flex-direction: column;
     cursor: pointer;
-    align-items: center;
     justify-content: center;
     color: #fff;
-    padding: 18px;
-    width: 100%;
+    padding: 10px;
+    width: 120px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     /* transition: 0.4s; */
     /* transform: translateY(-50%); */
+}
+
+.accordion.accTrue:hover .panel {
+    display: flex;
 }
 
 .mobileMenu {
     display: none;
 }
 
-/* Style the accordion panel. Note: hidden by default */
 .panel {
-    background-color: white;
-    color: white;
-    display: block;
-    /* overflow: hidden; */
+    margin-top: 25px;
+    background-color: #363636;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    min-width: 70px;
+    z-index: 1;
+    padding: 15px;
+    top: 50px;
 }
 
 .menu {
     display: flex;
     flex-direction: row;
     justify-content: right;
-    gap: 6%;
+    gap: 1px;
     list-style: none;
     padding: 0px;
     margin: 0px;
@@ -172,45 +181,6 @@ b {
 /* Hamburger Menu */
 .menu-toggle {
     display: none;
-}
-
-.mobile-menu {
-    display: none;
-    cursor: pointer;
-    color: #fff;
-    position: absolute;
-    top: 25px;
-    right: 20px;
-}
-
-.menu-item {
-    padding-top: 30px;
-    padding-bottom: 30px
-}
-
-.menu-item-withsub {
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-.accordion:hover .panel {
-    display: block;
-}
-
-.subMenu {
-    margin-top: 25px;
-    background-color: #363636;
-    display: none;
-    position: absolute;
-    min-width: 70px;
-    z-index: 1;
-    padding: 15px;
-}
-
-.subMenu a {
-    display: block;
-    text-decoration: none;
-    text-align: left;
 }
 
 .choose {
@@ -238,29 +208,21 @@ b {
     transition: 0.4s;
 }
 
-/* Rotate first bar */
+/* Hamburger Menu */
 .change .bar1 {
     transform: translate(0, 8px) rotate(-45deg);
 }
 
-/* Fade out the second bar */
 .change .bar2 {
     opacity: 0;
 }
 
-/* Rotate last bar */
 .change .bar3 {
     transform: translate(0, -11px) rotate(45deg);
 }
 
 .mobileMenu {
     display: none;
-}
-
-@media screen and (max-width: 1390px) {
-    .topBanner {
-        height: 300px;
-    }
 }
 
 
@@ -309,6 +271,14 @@ b {
         font-size: 13px;
     }
 
+    .menu a {
+        padding: 20px;
+    }
+
+    .panel a {
+        border-bottom: 1px solid #333;
+    }
+
     .breadcrumb {
         display: none;
     }
@@ -322,72 +292,75 @@ b {
         font-size: 16px;
     }
 
-    .accordion {
-        display: block;
-        cursor: pointer;
-        position: absolute;
-        background-color: #363636;
-        color: #fff;
-        padding: 18px;
-        width: 100%;
-        text-align: left;
-        border: none;
-        outline: none;
-        transition: 0.4s;
-        margin-top: 300px;
-        top: 50%;
-        right: 20px;
-        transform: translateY(-50%);
-        margin-right: 7%;
-
-        /* Center vertically in the navigation bar */
+    .menu-toggle:checked+.mobileMenu+.menu {
+        display: flex;
     }
 
+    .accordion {
+        background-color: #181818;
+        flex-direction: row;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        padding: 0px;
+        text-align: center;
+        border-bottom: 1px solid #333;
+    }
+
+    .accordion.accTrue:hover .panel {
+        display: none;
+    }
+
+    .accordion.accTrue:after {
+        content: '\02795';
+        /* + sign */
+        font-size: 13px;
+        color: transparent;
+        text-shadow: 0 0 0 rgb(179, 179, 179);
+        position: absolute;
+        padding-right: 65px;
+        right: 0px;
+        top: 35%;
+    }
+
+    .accordion.accTrue:after :hover {
+        color: transparent;
+        text-shadow: 0 0 0 rgb(255, 255, 255);
+    }
+
+    .active.accTrue:after {
+        content: "\2796";
+        color: transparent;
+        text-shadow: 0 0 0 rgb(179, 179, 179);
+        /* - Sign */
+    }
+
+    .accordion.accTrue.active .panel {
+        display: flex;
+    }
 
     .menu {
-        background-color: #242424;
         display: none;
+        position: absolute;
         flex-direction: column;
         gap: 0px;
-        position: fixed;
-        top: 75px;
-        right: 0;
         width: 100%;
-        text-align: center;
+        height: 100%;
         z-index: 100;
+        top: 75px;
+        left: 0;
+        transition: 0.4s;
+        transform: ease;
     }
 
-    .menu-item {
-        display: flex;
+    .panel {
+        background-color: #282828;
+        display: none;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 0px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-
-    .menu-item-withsub {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 0px;
-        padding-top: 5%;
-    }
-
-    .subMenu {
-        display: block;
-        position: static;
         width: 100%;
-        margin-top: 5%;
+        z-index: 1;
+        margin-top: 0px;
         padding: 0px;
-    }
-
-    .subMenu a {
-        text-align: center;
     }
 
     .choose {
@@ -395,21 +368,9 @@ b {
         text-align: center;
     }
 
-    .menu-toggle:checked+.mobile-menu+.menu {
-        display: flex;
-    }
-
-    .mobile-menu {
+    .mobileMenu {
         display: block;
         cursor: pointer;
-        color: #fff;
-        position: absolute;
-        top: 50%;
-        /* Center vertically in the navigation bar */
-        right: 20px;
-        transform: translateY(-50%);
-        margin-right: 7%;
-        /* Adjust positioning to exact center */
     }
 
     .hide-item {
