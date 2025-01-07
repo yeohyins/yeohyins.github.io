@@ -189,7 +189,6 @@ button:hover::after {
     .section .title h1,
     #planet h1,
     #myth h1 {
-        font-size: 60px;
         margin-left: 0;
         margin-right: 0;
         text-align: center;
@@ -217,7 +216,6 @@ button:hover::after {
     .title h1,
     #planet h1,
     #myth h1 {
-        font-size: 40px;
         margin-left: 0;
         margin-right: 0;
         text-align: center;
@@ -226,7 +224,6 @@ button:hover::after {
     .section p,
     #planet p,
     #myth p {
-        font-size: 16px;
         text-align: center;
     }
 
