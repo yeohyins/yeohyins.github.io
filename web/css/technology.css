@@ -96,9 +96,14 @@ body {
     margin: 60px auto;
     padding: 20px;
     max-width: 800px;
-    font-size: 1rem;
     line-height: 1.6;
     color: #fff;
+}
+
+.next {
+    width: 100%;
+    display: flex;
+    margin-left: 150px;
 }
 
 @media (max-width: 1024px) {
