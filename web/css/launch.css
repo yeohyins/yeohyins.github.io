@@ -13,16 +13,20 @@ h1 {
     text-align: center;
 }
 
-hr{
+hr {
     width: 100%;
 }
 
-.middle{
+img {
+    object-fit: cover;
+}
+
+.middle {
     width: 50%;
     border-color: rgb(142, 142, 142);
 }
 
-.centerText{
+.centerText {
     margin-bottom: 10%;
 }
 
@@ -37,13 +41,13 @@ hr{
     margin-bottom: 10%;
 }
 
-.textBox{
+.textBox {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5%;
     margin-left: 10%;
-    margin-right: 10%; 
+    margin-right: 10%;
 }
 
 .leftDiv {
@@ -54,13 +58,11 @@ hr{
     gap: 20px;
 }
 
-.titleBox p{
+.titleBox p {
     color: rgb(142, 142, 142);
 }
 
-@media screen and (max-width: 800px) {
-    
-}
+@media screen and (max-width: 800px) {}
 
 @media screen and (max-width: 800px) {
 
@@ -72,7 +74,7 @@ hr{
         min-height: auto;
     }
 
-    hr{
+    hr {
         width: 100%;
     }
 
@@ -84,21 +86,21 @@ hr{
         margin-bottom: 15%;
     }
 
-    .textBox{
+    .textBox {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 20px;
         flex-direction: column;
         margin-left: 10%;
-        margin-right: 10%; 
+        margin-right: 10%;
     }
 
-    .leftDiv{
+    .leftDiv {
         width: 90%;
     }
 
-    .rightDiv{
+    .rightDiv {
         width: 100%;
     }
 }

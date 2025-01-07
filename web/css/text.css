@@ -64,7 +64,7 @@ h2 {
     padding-bottom: 50px;
 }
 
-h2.noSpace{
+h2.noSpace {
     padding-bottom: 0px;
 }
 
@@ -99,7 +99,6 @@ b {
     top: 0;
 }
 
-
 /* Navigation */
 .navbar {
     display: flex;
@@ -121,11 +120,36 @@ b {
     width: 50px;
 }
 
+.accordion {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 18px;
+    width: 100%;
+    /* transition: 0.4s; */
+    /* transform: translateY(-50%); */
+}
+
+.mobileMenu {
+    display: none;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    background-color: white;
+    color: white;
+    display: block;
+    /* overflow: hidden; */
+}
+
 .menu {
     display: flex;
+    flex-direction: row;
     justify-content: right;
     gap: 6%;
-    width: 100%;
     list-style: none;
     padding: 0px;
     margin: 0px;
@@ -169,14 +193,8 @@ b {
     padding-bottom: 30px;
 }
 
-.menu-item-withsub:hover .subMenu {
+.accordion:hover .panel {
     display: block;
-}
-
-.mobile-menu {
-    display: none;
-    font-size: 30px;
-    cursor: pointer;
 }
 
 .subMenu {
@@ -208,29 +226,36 @@ b {
 .mobileMenu {
     display: inline-block;
     cursor: pointer;
-  }
-  
-  .bar1, .bar2, .bar3 {
+}
+
+.bar1,
+.bar2,
+.bar3 {
     width: 30px;
     height: 3.5px;
     background-color: #ffffff;
     margin: 6px 0;
     transition: 0.4s;
-  }
-  
-  /* Rotate first bar */
-  .change .bar1 {
-    transform: translate(0, 8px) rotate(-45deg);
-  }
-  
-  /* Fade out the second bar */
-  .change .bar2 {opacity: 0;}
-  
-  /* Rotate last bar */
-  .change .bar3 {
-    transform: translate(0, -11px) rotate(45deg);
-  }
+}
 
+/* Rotate first bar */
+.change .bar1 {
+    transform: translate(0, 8px) rotate(-45deg);
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+.mobileMenu {
+    display: none;
+}
 
 @media screen and (max-width: 1390px) {
     .topBanner {
@@ -261,7 +286,7 @@ b {
         padding-bottom: 6px;
     }
 
-    .specialH2{
+    .specialH2 {
         padding-bottom: 5px;
     }
 
@@ -296,6 +321,28 @@ b {
     a.head {
         font-size: 16px;
     }
+
+    .accordion {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        background-color: #363636;
+        color: #fff;
+        padding: 18px;
+        width: 100%;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+        margin-top: 300px;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        margin-right: 7%;
+
+        /* Center vertically in the navigation bar */
+    }
+
 
     .menu {
         background-color: #242424;

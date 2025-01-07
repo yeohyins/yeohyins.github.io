@@ -10,6 +10,16 @@
     <script src="js/test.js"></script>
 </head>
 
+<!-- <style>
+    .panel {
+        padding: 0 18px;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+</style> -->
+
 <body>
     <div class="sticky">
         <header class="navbar">
@@ -23,9 +33,10 @@
             </div>
 
             <div class="menu">
-                <div class="menu-item-withsub">
+                <div class="accordion">
                     <a href="space.html">Space</a>
-                    <div class="subMenu">
+
+                    <div class="panel">
                         <a href="galaxy.html" class="choose">Galaxy</a>
                         <a href="launch.html" class="choose">Launch</a>
                         <a href="mission.html" class="choose">Mission</a>
@@ -33,24 +44,43 @@
                     </div>
                 </div>
 
-                <div class="menu-item-withsub">
+                <div class="accordion">
                     <a href="planet.html">Planets</a>
-                    <div class="subMenu">
+
+                    <div class="panel">
                         <a href="terrestrialgiant.html" class="choose">Terrestrial Giant</a>
                         <a href="gasgiant.html" class="choose">Gas Giant</a>
                         <a href="iceGiant.html" class="choose">Ice Giant</a>
                     </div>
                 </div>
 
-                <div class="menu-item">
+                <div class="accordion">
                     <a href="myths.html">Myths</a>
                 </div>
 
-                <div class="menu-item">
+                <div class="accordion">
                     <a href="contact.html">Contact Us</a>
                 </div>
             </div>
         </header>
     </div>
 </body>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
+</script>
+
 </html>
