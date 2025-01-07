@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, initial-scale=1">
     <link rel="stylesheet" href="css/general.css">
     <link rel="icon" type="image/x-icon" href="img/logo.png">
-    <script src="js/general.js"></script>
 </head>
 
 <body>
@@ -59,11 +58,8 @@
             <li>Current Page</li>
         </ul>
 
-        <div class="backButton">
-            <a href="your back page" class="backBox">
-                <img src="img/backtotop.png" class="backImg" alt="back button">
-                <p>Back</p>
-            </a>
+        <div onclick="topFunction()" class="backtotop" id="backButton">
+            <img src="img/backtotop.png" alt="Back to Top">
         </div>
     </div>
     <!-- Navigation ends here -->
@@ -127,6 +123,8 @@
     <div class="backtotop">
         <a href="#top"><img src="img/backtotop.png" alt="Back to Top"></a>
     </div>
+
+    <script src="js/general.js"></script>
 </body>
 
 <script>
@@ -144,6 +142,7 @@
             }
         });
     }
+
 </script>
 
 
