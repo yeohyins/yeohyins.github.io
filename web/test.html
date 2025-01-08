@@ -3,10 +3,9 @@
 
 <head>
     <title>test</title>
-    <meta name="viewport" content="width=device-width, initial=scale-1.0">
-    <link rel="stylesheet" href="css/text.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, initial-scale=1">
+    <link rel="stylesheet" href="css/test.css">
     <link rel="icon" type="image/x-icon" href="img/logo.png">
-    <script src="js/test.js"></script>
 </head>
 
 <body>
@@ -21,56 +20,36 @@
             </label>
 
             <div class="menu">
-                <div class="accordion accTrue">
+                <button class="accordion accTrue">
                     <a href="space.html">Space</a>
-
-                    <div class="panel">
-                        <a href="galaxy.html" class="choose">Galaxy</a>
-                        <a href="launch.html" class="choose">Launch</a>
-                        <a href="mission.html" class="choose">Mission</a>
-                        <a href="technology.html" class="choose">Technology</a>
-                    </div>
+                </button>
+                <div class="panel">
+                  <a href="galaxy.html" class="choose">Galaxy</a>
+                  <a href="launch.html" class="choose">Launch</a>
+                  <a href="mission.html" class="choose">Mission</a>
+                  <a href="technology.html" class="choose">Technology</a>
                 </div>
-
-                <div class="accordion accTrue">
+                
+                <button class="accordion accTrue" >
                     <a href="planet.html">Planets</a>
-
-                    <div class="panel">
-                        <a href="terrestrialgiant.html" class="choose">Terrestrial Giant</a>
-                        <a href="gasgiant.html" class="choose">Gas Giant</a>
-                        <a href="iceGiant.html" class="choose">Ice Giant</a>
-                    </div>
+                </button>
+                <div class="panel">
+                  <a href="terrestrialgiant.html" class="choose">Terrestrial Giant</a>
+                  <a href="gasgiant.html" class="choose">Gas Giant</a>
+                  <a href="iceGiant.html" class="choose">Ice Giant</a>
                 </div>
-
-                <div class="accordion">
+                
+                <button class="accordion">
                     <a href="myths.html">Myths</a>
-                </div>
-
-                <div class="accordion">
+                </button>
+                <button class="accordion">
                     <a href="contact.html">Contact Us</a>
-                </div>
+                </button>
             </div>
         </header>
     </div>
 
     <script src="js/general.js"></script>
 </body>
-
-<script>
-    var acc = document.getElementsByClassName("accordion");
-    var i;
-
-    for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function () {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-                panel.style.maxHeight = null;
-            } else {
-                panel.style.maxHeight = panel.scrollHeight + "px";
-            }
-        });
-    }
-</script>
 
 </html>

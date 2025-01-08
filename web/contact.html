@@ -10,8 +10,8 @@
 </head>
 
 <body>
-    <!--Navigation-->
-    <div class="sticky">
+     <!--Navigation-->
+     <div class="sticky">
         <header class="navbar">
             <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo"></a>
             <input type="checkbox" id="menu-toggle" class="menu-toggle">
@@ -20,37 +20,35 @@
                 <div class="bar2"></div>
                 <div class="bar3"></div>
             </label>
-
+    
             <div class="menu">
-                <div class="accordion accTrue">
+                <button class="accordion accTrue">
                     <a href="space.html">Space</a>
-
-                    <div class="panel">
-                        <a href="galaxy.html" class="choose">Galaxy</a>
-                        <a href="launch.html" class="choose">Launch</a>
-                        <a href="mission.html" class="choose">Mission</a>
-                        <a href="technology.html" class="choose">Technology</a>
-                    </div>
+                </button>
+                <div class="panel pOne">
+                  <a href="galaxy.html" class="choose">Galaxy</a>
+                  <a href="launch.html" class="choose">Launch</a>
+                  <a href="mission.html" class="choose">Mission</a>
+                  <a href="technology.html" class="choose">Technology</a>
                 </div>
-
-                <div class="accordion accTrue">
+                
+                <button class="accordion accTrue" >
                     <a href="planet.html">Planets</a>
-
-                    <div class="panel">
-                        <a href="terrestrialgiant.html" class="choose">Terrestrial Giant</a>
-                        <a href="gasgiant.html" class="choose">Gas Giant</a>
-                        <a href="iceGiant.html" class="choose">Ice Giant</a>
-                    </div>
+                </button>
+                <div class="panel pTwo">
+                  <a href="terrestrialgiant.html" class="choose">Terrestrial Giant</a>
+                  <a href="gasgiant.html" class="choose">Gas Giant</a>
+                  <a href="iceGiant.html" class="choose">Ice Giant</a>
                 </div>
-
-                <div class="accordion">
+                
+                <button class="accordion">
                     <a href="myths.html">Myths</a>
-                </div>
-
-                <div class="accordion">
+                </button>
+                <button class="accordion">
                     <a href="contact.html">Contact Us</a>
-                </div>
+                </button>
             </div>
+    
         </header>
 
         <ul class="breadcrumb">
@@ -59,12 +57,10 @@
             <li>Current Page</li>
         </ul>
 
-        <div class="backButton">
-            <a href="your back page" class="backBox">
-                <img src="img/backtotop.png" class="backImg" alt="back button">
-                <p>Back</p>
-            </a>
+        <div onclick="topFunction()" class="backtotop" id="backButton">
+            <img src="img/backtotop.png" alt="Back to Top">
         </div>
+
     </div>
 
 
@@ -141,16 +137,11 @@
             </div>
         </div>
     </footer>
-
     <div class="backtotop">
         <a href="#top"><img src="img/backtotop.png" alt="Back to Top"></a>
     </div>
 
-
-
-
+    <script src="js/general.js"></script>
 </body>
-
-
 
 </html>

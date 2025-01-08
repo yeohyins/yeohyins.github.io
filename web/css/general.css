@@ -245,8 +245,6 @@ b {
     width: 120px;
     padding-top: 30px;
     padding-bottom: 30px;
-    /* transition: 0.4s; */
-    /* transform: translateY(-50%); */
 }
 
 .accordion.accTrue:hover .panel {
@@ -267,6 +265,7 @@ b {
     z-index: 1;
     padding: 15px;
     top: 50px;
+    overflow: hidden;
 }
 
 .menu {
@@ -574,7 +573,10 @@ footer {
     }
 
     .menu a {
-        padding: 20px;
+        padding: 25px;
+        text-decoration: none;
+        color: #8F8F8F;
+        transition: color 0.3s;
     }
 
     .panel a {
@@ -594,8 +596,13 @@ footer {
         font-size: 16px;
     }
 
+    
     .menu-toggle:checked+.mobileMenu+.menu {
         display: flex;
+    }
+    
+    .accordion.accTrue:hover .panel {
+        display: none;
     }
 
     .accordion {
@@ -606,6 +613,7 @@ footer {
         width: 100%;
         padding: 0px;
         text-align: center;
+        border: 0px;
         border-bottom: 1px solid #333;
     }
 
@@ -623,22 +631,6 @@ footer {
         padding-right: 65px;
         right: 0px;
         top: 35%;
-    }
-
-    .accordion.accTrue:after :hover {
-        color: transparent;
-        text-shadow: 0 0 0 rgb(255, 255, 255);
-    }
-
-    .active.accTrue:after {
-        content: "\2796";
-        color: transparent;
-        text-shadow: 0 0 0 rgb(179, 179, 179);
-        /* - Sign */
-    }
-
-    .accordion.accTrue.active .panel {
-        display: flex;
     }
 
     .menu {
@@ -662,7 +654,16 @@ footer {
         width: 100%;
         z-index: 1;
         margin-top: 0px;
+        top: 75px;
         padding: 0px;
+    }
+
+    .pOne{
+        top: 67px;
+    }
+
+    .pTwo{
+        top: 134px;
     }
 
     .choose {
