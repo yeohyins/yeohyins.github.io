@@ -236,6 +236,7 @@ b {
 }
 
 .accordion {
+    background-color: #101010;
     display: flex;
     flex-direction: column;
     cursor: pointer;
@@ -245,6 +246,7 @@ b {
     width: 120px;
     padding-top: 30px;
     padding-bottom: 30px;
+    border: 0px;
 }
 
 .accordion.accTrue:hover .panel {
@@ -276,6 +278,7 @@ b {
     list-style: none;
     padding: 0px;
     margin: 0px;
+    text-align: center;
 }
 
 .menu a {
