@@ -78,8 +78,21 @@ img {
         width: 100%;
     }
 
+    h2{
+        text-transform: uppercase;
+        font-family: "Orbitron", sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .centerText{
+        text-align: left;
+        margin-bottom: 0px;
+    }
+
     .column {
         flex-direction: column;
+        justify-content: left;
         width: 100%;
         gap: 70px;
         margin-top: 5%;
@@ -88,19 +101,23 @@ img {
 
     .textBox {
         display: flex;
-        justify-content: center;
+        justify-content: left;
         align-items: center;
         gap: 20px;
         flex-direction: column;
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 0;
+        margin-right: 0%;
     }
 
     .leftDiv {
-        width: 90%;
+        width: 80%;
     }
 
     .rightDiv {
         width: 100%;
+    }
+
+    .middle{
+        width: 75%;
     }
 }

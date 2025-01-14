@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, initial-scale=1">
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/mission.css">
-    <script src="js/general.js"></script>
     <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
 
 <body>
@@ -21,35 +21,45 @@
                 <div class="bar2"></div>
                 <div class="bar3"></div>
             </label>
-
+    
             <div class="menu">
-                <button class="accordion accTrue">
-                    <a href="space.html">Space</a>
-                </button>
-                <div class="panel pOne">
-                    <a href="galaxy.html" class="choose">Galaxy</a>
-                    <a href="launch.html" class="choose">Launch</a>
-                    <a href="mission.html" class="choose">Mission</a>
-                    <a href="technology.html" class="choose">Technology</a>
+                <div class="subNav">
+                    <div class="accordion accTrue">
+                        <a href="space.html">Space</a>
+                    </div>
+                    <div class="panel">
+                      <a href="galaxy.html">Galaxy</a>
+                      <a href="launch.html">Launch</a>
+                      <a href="mission.html">Mission</a>
+                      <a href="technology.html">Technology</a>
+                    </div>
+                    
                 </div>
-
-                <button class="accordion accTrue">
-                    <a href="planet.html">Planets</a>
-                </button>
-                <div class="panel pTwo">
-                    <a href="terrestrialgiant.html" class="choose">Terrestrial Giant</a>
-                    <a href="gasgiant.html" class="choose">Gas Giant</a>
-                    <a href="iceGiant.html" class="choose">Ice Giant</a>
+                
+                <div class="subNav">
+                    <div class="accordion accTrue" >
+                        <a href="planet.html">Planets</a>
+                    </div>
+                    <div class="panel">
+                        <a href="terrestrialgiant.html">Terrestrial Giant</a>
+                        <a href="gasgiant.html">Gas Giant</a>
+                        <a href="icegiant.html">Ice Giant</a>
+                    </div>
                 </div>
-
-                <button class="accordion">
+                
+                <div class="accordion">
                     <a href="myths.html">Myths</a>
-                </button>
-                <button class="accordion">
-                    <a href="contact.html">Contact Us</a>
-                </button>
-            </div>
+                </div>
 
+                <div class="accordion">
+                    <a href="profile.html">Profile</a>
+                </div>
+
+                <div class="accordion">
+                    <a href="contact.html">Contact Us</a>
+                </div>
+            </div>
+    
         </header>
 
         <ul class="breadcrumb">
@@ -206,6 +216,10 @@
             </div>
 
             <div class="footerMid">
+                <p><a href="profile.html" class="head">Profile</a></p>
+            </div>
+
+            <div class="footerMid">
                 <p><a href="contact.html" class="head">Contact Us</a></p>
             </div>
         </div>
@@ -227,7 +241,8 @@
         </div>
     </footer>
 
-    <script src="js/general.js"></script>
 </body>
+
+<script src="js/general.js"></script>
 
 </html>

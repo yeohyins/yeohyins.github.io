@@ -235,9 +235,15 @@ b {
     width: 50px;
 }
 
+.subNav{
+    display: flex;
+    position: relative;
+    float: left;
+}
+
+
 .accordion {
     display: flex;
-    flex-direction: column;
     cursor: pointer;
     justify-content: center;
     color: #fff;
@@ -247,7 +253,7 @@ b {
     padding-bottom: 30px;
 }
 
-.accordion.accTrue:hover .panel {
+.subNav:hover .panel{
     display: flex;
 }
 
@@ -264,8 +270,17 @@ b {
     min-width: 70px;
     z-index: 1;
     padding: 15px;
-    top: 50px;
-    overflow: hidden;
+    top: 55px;
+}
+
+.panel a:hover {
+    background-color: #525252;
+}
+
+.panel a{
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .menu {
@@ -295,16 +310,6 @@ b {
 /* Hamburger Menu */
 .menu-toggle {
     display: none;
-}
-
-.choose {
-    padding: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.choose:hover {
-    background-color: #525252;
 }
 
 .mobileMenu {
@@ -600,9 +605,10 @@ footer {
     .menu-toggle:checked+.mobileMenu+.menu {
         display: flex;
     }
-    
-    .accordion.accTrue:hover .panel {
-        display: none;
+
+    .accordion a{
+        padding-left: 60px;
+        padding-right: 60px;
     }
 
     .accordion {
@@ -613,7 +619,6 @@ footer {
         width: 100%;
         padding: 0px;
         text-align: center;
-        border: 0px;
         border-bottom: 1px solid #333;
     }
 
@@ -633,6 +638,22 @@ footer {
         top: 35%;
     }
 
+    .accordion.accTrue:after :hover {
+        color: transparent;
+        text-shadow: 0 0 0 rgb(255, 255, 255);
+    }
+
+    .active.accTrue:after {
+        content: "\2796";
+        color: transparent;
+        text-shadow: 0 0 0 rgb(179, 179, 179);
+        /* - Sign */
+    }
+
+    .accordion.accTrue.active .panel {
+        display: flex;
+    }
+
     .menu {
         display: none;
         position: absolute;
@@ -649,21 +670,16 @@ footer {
 
     .panel {
         background-color: #282828;
-        display: none;
+        display: flex;
         flex-direction: column;
         width: 100%;
-        z-index: 1;
         margin-top: 0px;
-        top: 75px;
         padding: 0px;
-    }
-
-    .pOne{
-        top: 67px;
-    }
-
-    .pTwo{
-        top: 134px;
+        max-height: 0;
+        top: 65px;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        text-align: center;
     }
 
     .choose {
