@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox 1</title>
+
+    <style>
+        body {
+            font-family: "Oxygen", sans-serif;
+            background-color: rgb(246, 243, 239);
+            margin-top: 80px;
+            margin-bottom: 100px;
+            padding: 0;
+        }
+
+        h1 {
+            font-family: "Archivo", sans-serif;
+            font-size: 57px;
+            font-weight: 700;
+        }
+
+        .word {
+            text-align: center;
+            padding: 30px;
+        }
+
+        #flex-container {
+            flex-direction: row;
+            justify-content: center;
+            display: flex;
+            gap: 30px;
+            padding-left: 100px;
+            padding-right: 100px;
+            border-radius: 55px;
+        }
+
+        #flex-container>div {
+            width: calc(100% / 3 - 80px);
+            padding: 20px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 25px;
+        }
+
+        .image-container {
+            overflow: hidden;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .banner-image {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 15px;
+            transition: transform 0.5s ease;
+        }
+
+        .banner-image:hover {
+            transform: scale(1.1);
+        }
+
+        .content-frame {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .banner-title {
+            font-family: "Archivo", sans-serif;
+            font-size: 25px;
+            font-weight: 700;
+        }
+
+        p {
+            line-height: 1.5;
+        }
+
+        @media (max-width: 1300px) {
+            body {
+                margin-bottom: 0;
+                margin-top: 40px;
+                padding: 0;
+            }
+
+            h1 {
+                font-size: 42px;
+                font-weight: 700;
+            }
+
+            #flex-container {
+                padding: 0;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+
+            #flex-container>div {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 770px) {
+            #flex-container {
+                grid-template-columns: repeat(1, 1fr);
+                flex-direction: column;
+                padding-right: 40px;
+                gap: 20px 20px;
+            }
+
+            h1 {
+                font-size: 35px;
+                font-weight: 700;
+            }
+
+            .word {
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="word">
+        <h5>BUILDING A BETTER FUTURE</h5>
+        <h1>We construct & deliver quality projects</h1>
+        <p>Meet our customers and explore their success stories with us</p>
+    </div>
+
+    <div id="flex-container">
+        <div>
+            <div class="image-container">
+                <img src="https://construction.elementra.themerex.net/wp-content/uploads/2025/04/custom-img-017-copyright.jpg"
+                    alt=" Residential project" class="banner-image">
+            </div>
+            <div class="content-frame">
+                <h3 class="banner-title">
+                    Residential project
+                </h3>
+                <p>We build sustainable and modern homes for comfortable living.</p>
+            </div>
+        </div>
+        <div>
+            <div class="image-container">
+                <img src="https://construction.elementra.themerex.net/wp-content/uploads/2025/04/custom-img-018-copyright.jpg"
+                    alt="Commercial spaces" class="banner-image">
+            </div>
+            <div class="content-frame">
+                <h3 class="banner-title">
+                    Commercial spaces
+                </h3>
+                <p>We create efficient, inspiring workspaces for businesses of all sizes.</p>
+            </div>
+        </div>
+        <div>
+            <div class="image-container">
+                <img src="https://construction.elementra.themerex.net/wp-content/uploads/2025/04/custom-img-019-copyright.jpg"
+                    alt="Infrastructure works" class="banner-image">
+            </div>
+            <div class="content-frame">
+                <h3 class="banner-title">
+                    Infrastructure works
+                </h3>
+                <p>We develop strong, reliable infrastructure for growing communities.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
