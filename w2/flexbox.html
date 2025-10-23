@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Georgia", serif;
+        }
+
+        body {
+            background-color: #540d1a;
+            color: white;
+            padding: 60px 80px;
+        }
+
+        .team-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .member {
+            text-align: left;
+            position: relative;
+            width: 22%;
+        }
+
+        .member:nth-child(1) {
+            margin-top: 0px;
+        }
+
+        .member:nth-child(2) {
+            margin-top: 80px;
+        }
+
+        .member:nth-child(3) {
+            margin-top: 160px;
+        }
+
+        .member:nth-child(4) {
+            margin-top: 240px;
+        }
+
+        .name {
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            color: #ffa5a5;
+            letter-spacing: 0.5px;
+            border-bottom: 1px solid #a34b52;
+            display: inline-block;
+            padding-bottom: 3px;
+        }
+
+        .member img {
+            width: 100%;
+            border-radius: 2px;
+            margin-top: 10px;
+            filter: grayscale(100%);
+            display: block;
+            transition: filter 0.6s ease;
+        }
+
+        .member img:hover {
+            filter: grayscale(0%);
+        }
+
+        .role {
+            font-size: 0.9em;
+            color: #cfcfcf;
+            margin-top: 8px;
+        }
+
+        @media (max-width: 900px) {
+            .member {
+                width: 45%;
+                margin-top: 40px !important;
+            }
+        }
+
+        @media (max-width: 700px) {
+            .member {
+                width: 100%;
+                margin-top: 30px !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="team-container">
+        <div class="member">
+            <div class="name">JOSEPH BARNES</div>
+            <img src="https://library.elementor.com/english-pub-flexbox/wp-content/uploads/sites/275/2020/09/about_img1.jpg"
+                alt="Joseph Barnes">
+            <div class="role">Manager</div>
+        </div>
+
+        <div class="member">
+            <div class="name">EARL WOOD</div>
+            <img src="https://library.elementor.com/english-pub-flexbox/wp-content/uploads/sites/275/2020/09/about_img2.jpg"
+                alt="Earl Wood">
+            <div class="role">Bartender</div>
+        </div>
+
+        <div class="member">
+            <div class="name">BOBBY JOHNSON</div>
+            <img src="https://library.elementor.com/english-pub-flexbox/wp-content/uploads/sites/275/2020/09/about_img3.jpg"
+                alt="Bobby Johnson">
+            <div class="role">Bartender</div>
+        </div>
+
+        <div class="member">
+            <div class="name">JANE MORGAN</div>
+            <img src="https://library.elementor.com/english-pub-flexbox/wp-content/uploads/sites/275/2020/09/about_img4.jpg"
+                alt="Jane Morgan">
+            <div class="role">Bartender</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
